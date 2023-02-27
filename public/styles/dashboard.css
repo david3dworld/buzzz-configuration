@@ -1,0 +1,2884 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#__next {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --primary: rgba(112, 71, 235, 1);
+  --primary-hover: rgba(128, 87, 251, 1);
+  --bg-white: #ffffff;
+  --bg-main: #e5e5e5;
+  --dark-text: #4a4a4a;
+  --dashboard-bg: #f7fafc;
+
+  --aeonik: Aeonik;
+  --aeonik-thin: Aeonik-Thin;
+  --aeonik-bold: Aeonik-Bold;
+  --aeonik-medium: Aeonik-Medium;
+  --sf-pro-display-bold: SF-Pro-Display-Bold;
+  --sf-pro-display: SF-Pro-Display;
+  --nunito-sans: 'Nunito Sans', sans-serif;
+}
+
+/* ===================================
+    DASHBOARD LAYOUT STYLE STARTS HERE
+====================================== */
+.buzzz-dashboard-container {
+  background-color: var(--dashboard-bg);
+  min-height: 100vh;
+}
+
+.buzzz-dashboard-container .sidebar-container,
+.mobile-dashboard-sidebar-container .content {
+  width: 240px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 9;
+}
+
+.mobile-dashboard-sidebar-container .content {
+  height: 100%;
+}
+
+.buzzz-dashboard-container .content-conteiner {
+  margin-left: 270px;
+}
+
+.buzzz-dashboard-sidebar-container {
+  height: 100vh;
+  width: 100%;
+  padding: 30px 0;
+  position: relative;
+  padding-bottom: 25px;
+  overflow-y: auto;
+}
+
+.buzzz-dashboard-sidebar-container .logo-con {
+  margin-left: 26px;
+  margin-bottom: 70px;
+}
+
+.buzzz-dashboard-sidebar-container .dashboard-links-con {
+  margin-left: 26px;
+}
+
+.buzzz-dashboard-sidebar-container .dashboard-links-con .link {
+  margin: 5px 0;
+  height: 50px;
+  position: relative;
+  padding: 0 14px;
+}
+
+.buzzz-dashboard-sidebar-container .dashboard-links-con .link .motion-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  background: rgba(129, 0, 247, 0.05);
+  border-radius: 12px;
+}
+
+.buzzz-dashboard-sidebar-container .dashboard-links-con .link a {
+  position: relative;
+  z-index: 9;
+}
+
+.buzzz-dashboard-sidebar-container .dashboard-links-con .link span,
+.buzzz-dashboard-sidebar-container .dashboard-links-con .link img {
+  max-width: 25px;
+  width: 100%;
+  margin-right: 14px;
+}
+
+.buzzz-dashboard-sidebar-container .dashboard-links-con .link p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #425466;
+  transition: all 0.3s ease;
+}
+
+.buzzz-dashboard-sidebar-container .dashboard-links-con .link path {
+  transition: all 0.3s ease;
+}
+
+.buzzz-dashboard-sidebar-container .dashboard-links-con .link.active p {
+  font-weight: 600;
+  color: #8100f7;
+}
+
+.buzzz-dashboard-sidebar-container .dashboard-links-con .link.active path {
+  fill: #8100f7;
+}
+
+.buzzz-dashboard-sidebar-container .profile-container {
+  margin: 0 18px 0px 22px;
+}
+
+.buzzz-dashboard-sidebar-container .profile-container .profile .img-con {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  overflow: hidden;
+  min-width: 33px;
+}
+
+.buzzz-dashboard-sidebar-container .profile-container .profile .img-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-width: 33px;
+}
+
+.buzzz-dashboard-sidebar-container .profile-container .profile h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #282b32;
+}
+
+.buzzz-dashboard-sidebar-container .profile-container .profile p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 18px;
+  color: #a0a6b1;
+}
+
+.buzzz-dashboard-sidebar-container .profile-container button:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.buzzz-sidebar-accordion-con {
+  border-top: 1px solid #f2f2f2;
+}
+
+.buzzz-sidebar-accordion-con p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #777e90;
+}
+
+.buzzz-sidebar-accordion-con p.active {
+  color: #8100f7;
+}
+
+.buzzz-sidebar-accordion-con button {
+  padding: 20px 22px;
+}
+
+.buzzz-sidebar-accordion-con button:focus {
+  box-shadow: none;
+}
+
+.buzzz-sidebar-accordion-con .links-con {
+  margin: 0 22px;
+}
+
+.buzzz-sidebar-accordion-con .links-con a {
+  display: inline-block;
+  position: relative;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6e768a;
+  transition: all 0.3s ease;
+  border-left: 2px solid transparent;
+}
+
+.buzzz-sidebar-accordion-con .links-con a.active {
+  padding-left: 8px;
+  border-left: 2px solid #8100f7;
+}
+
+.buzzz-dashboard-header-container .item-con {
+  padding: 30px;
+}
+
+.buzzz-dashboard-header-container .routes-container {
+  padding: 0 30px;
+}
+
+.buzzz-dashboard-header-container .routes-container .link {
+  position: relative;
+}
+
+.buzzz-dashboard-header-container .routes-container .border-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #8100f7;
+}
+
+.buzzz-dashboard-header-container .routes-container a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: 'salt' on;
+  color: #718096;
+  display: inline-block;
+  padding-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.buzzz-dashboard-header-container .routes-container a.active {
+  color: #000000;
+}
+
+.buzzz-dashboard-header-container h3 {
+  font-family: var(--aeonik-bold);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 136.02%;
+  color: #27272e;
+}
+
+.buzzz-dashboard-header-container button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #16192c;
+  padding: 12px 20px;
+}
+
+.buzzz-dashboard-header-container button:first-of-type {
+  color: #16192c !important;
+}
+
+.buzzz-dashboard-header-container button:last-of-type {
+  color: #ffffff;
+}
+
+.header-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+@media (max-width: 600px) {
+  .buzzz-dashboard-header-container {
+    display: none;
+    background: red;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+  }
+}
+
+.mobile-dashboard-header {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 5;
+}
+
+.mobile-dashboard-header .header-content .cart span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #16192c;
+}
+
+.mobile-dashboard-header .header-content .menu {
+  all: unset;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.mobile-dashboard-sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+}
+
+/* ===================================
+    DASHBOARD LAYOUT STYLE ENDS HERE
+====================================== */
+
+/* ===================================
+    DASHBOARD SETTINGS STYLE START HERE
+====================================== */
+
+.dashboard-account-settings {
+  margin-bottom: 10px;
+  max-width: 730px;
+  width: 100%;
+}
+
+
+
+.dashbaord-settings-container {
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.dashboard-settings .image-upload {
+  background: #fff;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 3%);
+  border-radius: 16px;
+  grid-gap: 128px;
+  align-items: center;
+  width: 100%;
+  grid-gap: 128px;
+  gap: 128px;
+  padding: 21px 23px;
+  margin: 32px 0;
+}
+
+.dashboard-settings .image-upload .profile-name-img {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-settings .image-upload .profile-name-img .profile-dp {
+  border-radius: 100px;
+}
+
+.dashboard-settings .image-upload .profile-name-img .profile-name {
+  margin-left: 10px;
+}
+
+.dashboard-settings .image-upload .profile-name-img .profile-name h4 {
+  font-size: 16px;
+}
+.dashboard-settings .image-upload .profile-name-img .profile-name p {
+  font-size: 14px;
+}
+
+.dashboard-settings .image-upload .upload-btn {
+  background: none;
+  border: none;
+  align-items: center;
+  box-shadow: none;
+}
+
+.dashboard-settings .image-upload .upload-btn .upload h4 {
+  font-size: 12px;
+  margin-left: 7px;
+}
+
+.dashboard-account-settings .input-page-form .security-input-field input {
+  border-radius: 10px;
+  width: 100%;
+  height: 38px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: none;
+  padding-left: 15px;
+}
+
+.dashboard-account-settings .input-page-form .security-input-field label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.buzzz-settings-switch-card {
+  background: #fff;
+  padding: 30px 27px;
+  max-width: 100%;
+  flex: 1;
+  min-height: 206px;
+  box-shadow: rgb(0 0 0 / 3%) 0px 4px 10px;
+  border-radius: 16px;
+}
+
+.buzzz-settings-switch-card h4 {
+  font-size: 16px;
+  padding-bottom: 18px;
+}
+
+.buzzz-settings-switch-card p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #425466;
+}
+
+.dashboard-account-settings .show-profile .public-email {
+  background: #fff;
+  padding: 30px 27px;
+  flex: 1;
+  max-width: 100%;
+  min-height: 206px;
+  box-shadow: rgb(0 0 0 / 3%) 0px 4px 10px;
+  border-radius: 16px;
+}
+
+.dashboard-account-settings .show-profile .public-email h4 {
+  font-size: 16px;
+  padding-bottom: 18px;
+}
+
+.dashboard-account-settings .show-profile .public-email p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #425466;
+}
+
+.dashboard-account-settings .account-information h3 {
+  font-size: 16px;
+}
+.dashboard-account-settings .account-information .curved-btn {
+  padding: 10px 32px;
+  font-size: 12px;
+}
+
+.dashboard-account-settings .delete-account {
+  margin-top: 1.3rem;
+}
+
+.dashboard-account-settings .delete-account .del-account {
+  padding: 30px 27px;
+  max-width: 100%;
+  background: #ffffff;
+  min-height: 139px;
+  box-shadow: rgb(0 0 0 / 3%) 0px 4px 10px;
+  border-radius: 16px;
+  grid-gap: 128px;
+  grid-gap: 128px;
+  gap: 128px;
+}
+
+.dashboard-account-settings .delete-account .del-account .curved-btn {
+  background: #f16063;
+  border-radius: 100px;
+  padding: 5px 20px;
+  border: none;
+  font-size: 12px;
+}
+
+.delete-btn {
+  background-color: #8100f7;
+  border-color: #8100f7;
+  border-radius: 100px;
+  padding: 8px 20px;
+  color: #fff;
+  border: none;
+  font-size: 12px;
+}
+
+.dashboard-account-settings .delete-account .del-account h4 {
+  color: #f16063;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.dashboard-account-settings .delete-account .del-account p {
+  color: #425466;
+  font-size: 14px;
+  font-weight: 300;
+  padding-right: 10rem;
+  line-height: 21px;
+}
+
+/* ===================================
+    DASHBOARD SETTINGS SECURITY STYLE STARTS HERE
+====================================== */
+.buzzz-dashboard-security-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none;
+  border-radius: 16px;
+}
+
+.buzzz-dashboard-security-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.005em;
+  color: #16192c;
+}
+
+.buzzz-dashboard-security-subtitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #27272e;
+}
+
+.buzzz-dashboard-security-h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #425466;
+}
+
+.buzzz-dashboard-security-paragraph {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #425466;
+  /* padding-right: 1px; */
+}
+
+.buzzz-dashboard-security-info {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #425466;
+}
+
+.buzzz-dashboard-security-info ul {
+  padding-left: 1rem;
+}
+
+.buzzz-dashboard-security-hr {
+  border: 1px solid #e4ecf7;
+}
+
+.buzzz-dashboard-security-button .curved-btn {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px !important;
+  line-height: 12px;
+}
+
+.security-password-input-field label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #425466;
+}
+
+.security-password-input-field input {
+  height: 36px;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(50, 50, 71, 0.08), 0px 0px 1px rgba(50, 50, 71, 0.2);
+  border-radius: 6px;
+  border: none;
+}
+
+.security-save-password {
+  background: #4c6fff;
+  border-radius: 6px;
+  padding: 12px 20px;
+}
+
+.security-enable {
+  padding: 12px 20px;
+  background: #4c6fff;
+  border-radius: 6px;
+}
+
+.security-setup {
+  padding: 12px 20px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(50, 50, 71, 0.08), 0px 0px 1px rgba(50, 50, 71, 0.2);
+}
+
+.security-device {
+  padding: 12px 20px;
+  width: 183px !important;
+  background: #4c6fff;
+  border-radius: 6px;
+}
+
+.security-active-devices h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1f2d3d;
+}
+
+.security-active-devices p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #7a7a9d;
+}
+
+.security-active-devices-dot:after {
+  content: '\2807';
+  font-size: 30px;
+  color: #7a7a9d;
+}
+
+/* ===================================
+    DASHBOARD SETTINGS SECURITY STYLE ENDS HERE
+====================================== */
+
+/* ===================================
+    DASHBOARD DESIGN  STYLE STARTS HERE
+====================================== */
+
+.dashboard-design-container {
+  max-width: 1159px;
+  width: 100%;
+  background: #ffffff;
+  padding: 3rem 1rem;
+  border-radius: 14px;
+  margin: auto;
+  height: 100%;
+  max-height: 874px;
+}
+.dashboard-design-container .dashboard-design h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #7047eb;
+  padding-bottom: 1.5rem;
+}
+
+.dashboard-design-container .dashboard-design p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.dashboard-design-container .dashboard-design .curved-btn.naked {
+  color: #000;
+  border: 1px solid #e6e6e6;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: var(--aeonik);
+  padding: 6px 24px;
+}
+
+.dashboard-design-container .dashboard-design .curved-btn.naked a {
+  color: #000;
+  text-decoration: none !important;
+}
+
+.dashboard-design-container .dashboard-design .curved-btn.background {
+  font-size: 12px;
+  line-height: 22px;
+  font-family: var(--aeonik);
+  padding: 6px 24px;
+  background-color: #8100f7;
+}
+.dashboard-design-container .dashboard-design .curved-btn.background a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.design_merch_text_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.design_merch_text {
+  width: 522px;
+  text-align: center;
+}
+
+@media (max-width: 470px) {
+  .design_merch_text {
+    width: 270px;
+  }
+}
+
+.dashboard-design-container .dashboard-design .button-wrapper {
+  padding-top: 4rem;
+}
+
+@media (max-width: 470px) {
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0rem;
+  }
+}
+
+.dashboard-design-container .empty-box {
+  background-color: #f2f2f2;
+  max-width: 1037px;
+  width: 100%;
+  margin: auto;
+  height: 452px;
+  margin-top: 5rem;
+  border-radius: 14px;
+}
+
+.dashboard-design-container .chose-template {
+  width: 100%;
+  max-width: 730px;
+  margin: 5rem auto 0;
+}
+
+.dashboard-design-container .chose-template .templates {
+  background: #f7fafc;
+  padding: 1.7rem 0rem;
+  border-radius: 10px;
+  min-width: 175px;
+  min-height: 172px;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+.dashboard-design-container .chose-template .templates .templates-details {
+  position: relative;
+  top: 0.5rem;
+}
+
+.dashboard-design-container .chose-template .gap-6 {
+  gap: 3rem;
+}
+.dashboard-design-container .chose-template .gap-6 a {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer !important;
+}
+
+.dashboard-design-container .chose-template .templates .templates-details h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  flex: 1;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dashboard-design-container .chose-template .background {
+  line-height: 22px;
+  font-family: var(--aeonik);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  background-color: #8100f7;
+  padding: 9px 53px;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-design-container .chose-template .background a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.dashboard-design-container .chose-template a {
+  text-decoration: none;
+  list-style: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.dashboard-design-container .chose-template .curved-btn.naked {
+  text-decoration: none;
+  list-style: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0;
+  text-align: center;
+}
+
+.dashboard-design-container .chose-template .desc-button {
+  max-width: 131px;
+}
+
+/* ===================================
+    DASHBOARD DESIGN  ENDS STARTS HERE
+====================================== */
+/* ===================================
+   DASHBOARD HOME STYLE STARTS HERE
+====================================== */
+
+.buzzz-dashboard-home {
+  position: relative;
+  border: none;
+}
+
+.buzzz-dashboard-home h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30.8025px;
+  line-height: 37px;
+  color: #010004;
+}
+
+.buzzz-dashboard-home p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.9177px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.buzzz-dashboard-home a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.9342px;
+  line-height: 14px;
+  color: #3f37c9;
+}
+
+.buzzz-dashboard-home-button {
+  width: 127.55px;
+}
+
+.home-button {
+  padding: 9px 32px;
+}
+
+.buzzz-dashboard-home .new {
+  position: relative;
+  top: -0.9em;
+  left: -0.5em;
+}
+
+.buzzz-dashboard-grid {
+  border: none;
+  border-radius: 13.3272px;
+}
+
+.buzzz-dashboard-home-side {
+  position: relative;
+  border-radius: 10.0352px;
+  border: none;
+}
+
+.buzzz-dashboard-home-side h1 {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27.301px;
+  line-height: 33px;
+  color: #384a62;
+}
+
+.buzzz-dashboard-home-side h2 {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14.7123px;
+  line-height: 22px;
+  color: #384a62;
+}
+
+.buzzz-dashboard-home-side p {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.7123px;
+  line-height: 22px;
+  color: #677f9e;
+}
+
+.buzzz-dashboard-home-side .comp {
+  padding-top: 6em;
+  margin-top: 4em;
+}
+
+.buzzz-dashboard-home-side .side-vertical {
+  position: absolute;
+  width: 1.82px;
+  height: 186.56px;
+  background: #a0aec0;
+  right: 1em;
+}
+
+.buzzz-dashboard-grid .app-container {
+  max-width: 1300px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+/* .buzzz-dashboard-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.store_card_wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.buzzz-dashboard-grid .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .buzzz-dashboard-grid .grid-container {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+  }
+}
+
+/* ===================================
+    DASHBOARD HOME STYLE ENDS HERE
+====================================== */
+
+/* ===================================
+SETTINGS NOTIFICATION STYLE STARTS HERE
+====================================== */
+.buzzz-notifications-settings-container {
+  max-width: 730px;
+  margin: auto;
+  margin-top: 90px;
+}
+
+.buzzz-notifications-settings-container .big-con {
+  border-radius: 16px;
+}
+
+.buzzz-notifications-settings-container .big-con .header h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #7a7a9d;
+}
+
+.buzzz-notifications-settings-container .big-con .content {
+  border-top: 1px solid #edf2f7;
+}
+
+.buzzz-notifications-settings-container .big-con .content h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #27272e;
+}
+
+.buzzz-notifications-settings-container .big-con .content .title,
+.buzzz-notifications-settings-container .big-con .header .title {
+  max-width: 80px;
+  width: 100%;
+}
+
+/* ===================================
+ SETTINGS NOTIFICATION STYLE ENDS HERE
+====================================== */
+
+/* ===================================
+  CUSTOMER STYLE STARTS HERE
+====================================== */
+
+.buzzz-customer-page-container .content {
+  padding: 40px 30px 40px 40px;
+  border-radius: 14px;
+}
+
+@media (max-width: 450px) {
+  .title-con {
+    /* display: flex; */
+    flex-direction: column;
+  }
+}
+
+.buzzz-customer-page-container .content .title-con h3,
+.buzzz-customer-page-container .content .title-con h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #020202;
+}
+
+@media (max-width: 450px) {
+  .payout_text {
+    padding-bottom: 1rem;
+  }
+}
+
+.buzzz-customer-page-container .content .title-con h4 {
+  font-weight: 600;
+}
+
+.buzzz-table-checkbox {
+  width: 14px;
+  height: 14px;
+}
+
+.buzzz-table-container {
+  background: #ffffff;
+}
+
+.buzzz-table-container .table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.buzzz-table-container tbody tr,
+.buzzz-table-container tbody tr td {
+  border: none !important;
+}
+
+.buzzz-table-container .seperator {
+  height: 10px;
+}
+
+.buzzz-table-container tbody {
+  border-top: 1px solid #f0f0f0 !important;
+}
+
+.buzzz-table-container thead tr th {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #020202;
+  padding-bottom: 12px;
+}
+
+.buzzz-table-container tbody tr td.company,
+.buzzz-table-container tbody tr td.email,
+.buzzz-table-container tbody .status p,
+.buzzz-table-container .name-con p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #020202;
+}
+
+.buzzz-table-container tbody tr td.email {
+  color: #6d6d6d;
+}
+
+.buzzz-table-container .name-con .img-con {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.buzzz-table-container .name-con .img-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buzzz-table-container .name-con p {
+  font-weight: 500;
+}
+
+.buzzz-table-container tbody .status p {
+  color: #5c8372;
+}
+
+.buzzz-table-container tbody .status {
+  background: #dffae6;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.table-add-field-btn button,
+.table-filter-select {
+  border-radius: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #020202;
+}
+
+.table-add-field-btn button {
+  border: 1px solid #d6d6d6;
+  background-color: transparent;
+}
+
+/* ===================================
+  CUSTOMER STYLE ENDS HERE
+====================================== */
+
+/* ===================================
+  ORDERS STYLE STARTS HERE
+====================================== */
+
+.buzzz-orders-page-container .content {
+  padding: 40px 30px 40px 40px;
+  border-radius: 14px;
+}
+
+.buzzz-orders-page-container .content .title-con h3,
+.buzzz-orders-page-container .content .title-con h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* ===================================
+    DASHBOARD REPORT STYLE STARTS HERE
+====================================== */
+.buzzz-dashboard-report .card {
+  max-width: 1129px;
+  margin: auto;
+  border: none;
+  border-radius: 14px;
+  margin-bottom: 2em;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+
+.buzzz-dashboard-report .r-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #020202;
+}
+
+.buzzz-orders-page-container .content .title-con h4 {
+  font-weight: 600;
+}
+.buzzz-orders-page-container .content .title-con .curved-btn.background {
+  font-size: 12px;
+  line-height: 22px;
+  font-family: var(--aeonik);
+  padding: 6px 24px;
+  background-color: #8100f7;
+}
+.buzzz-orders-page-container .content .title-con .curved-btn.background a {
+  color: #fff;
+}
+
+.buzzz-orders-table-checkbox {
+  width: 14px;
+  height: 14px;
+}
+
+.buzzz--orders-table-container {
+  background: #ffffff;
+}
+
+.buzzz-orders-table-container .table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.buzzz-orders-table-container tbody tr,
+.buzzz-orders-table-container tbody tr td {
+  border: none !important;
+}
+
+.buzzz-orders-table-container .seperator {
+  height: 10px;
+}
+
+.buzzz-orders-table-container tbody {
+  border-top: 1px solid #f0f0f0 !important;
+}
+
+.buzzz-orders-table-container thead tr th {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #020202;
+  padding-bottom: 12px;
+}
+
+.buzzz-orders-table-container tbody tr td.company,
+.buzzz-orders-table-container tbody tr td.email,
+.buzzz-orders-table-container tbody .status p,
+.buzzz-orders-table-container .name-con p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #020202;
+}
+
+.buzzz-orders-table-container tbody tr td.email {
+  color: #6d6d6d;
+}
+
+.buzzz-orders-table-container .name-con .img-con {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.buzzz-orders-table-container .name-con .img-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buzzz-orders-table-container .name-con p {
+  font-weight: 500;
+}
+
+.buzzz-orders-table-container tbody .status p {
+  color: #5c8372;
+}
+
+.buzzz-orders-table-container tbody .status {
+  background: #dffae6;
+  border-radius: 4px;
+  padding: 6px 23px;
+}
+
+.buzzz-orders-table-container tbody .status-two {
+  background: rgba(201, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.buzzz-orders-table-container tbody .status-two p {
+  font-size: 14px;
+  color: rgba(255, 0, 0, 1);
+}
+
+.table-add-field-btn button,
+.table-filter-select {
+  border-radius: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #020202;
+}
+
+.table-add-field-btn button {
+  border: 1px solid #d6d6d6;
+  background-color: transparent;
+}
+
+.buzzz--orders-table-container .content .pagination {
+  width: 100%;
+  max-width: 865px;
+  margin: auto;
+}
+
+.buzzz-orders-page-container .content .pagination-con h3,
+.buzzz-orders-page-container .content .pagination-con h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 29px;
+  color: #020202;
+}
+.buzzz-orders-page-container .content .pagination-con h3 span,
+.buzzz-orders-page-container .content .pagination-con h4 span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 29px;
+  color: #020202;
+}
+
+.buzzz-orders-page-container .content .pagination-con .prev {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 29px;
+  color: #020202;
+}
+
+.buzzz-orders-page-container .content .pagination-con .next {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 29px;
+  color: #020202;
+}
+
+.buzzz-orders-page-container .content .create-order h4 {
+  padding-top: 2em;
+  font-size: 35px;
+}
+
+.buzzz-orders-page-container .content .create-order p {
+  padding: 1em 1rem;
+  line-height: 27px;
+  font-size: 20px;
+}
+
+.buzz-create-order-container {
+  max-width: 1159px;
+  width: 100%;
+  background: #ffffff;
+  /* padding: 3rem 1rem; */
+  padding: 40px 30px 40px 40px;
+  border-radius: 14px;
+  margin: auto;
+  height: 100%;
+  max-height: 874px;
+}
+
+.buzz-create-order-container {
+  margin-top: 2rem;
+}
+
+.buzz-create-order-container .create-design h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 29px;
+  color: #020202;
+  padding-top: 2em;
+  padding-bottom: 1.5rem;
+}
+
+.buzz-create-order-container .create-design p {
+  color: #000;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 400;
+  font-family: var(--aeonik);
+  padding-top: 0.5rem;
+  padding-bottom: 4rem;
+  line-height: 27px;
+  font-size: 20px;
+}
+
+.buzz-create-order-container .create-design .curved-btn.background {
+  font-size: 12px;
+  line-height: 2px;
+  font-family: var(--aeonik);
+  padding: 17px 23px;
+  background-color: #8100f7;
+}
+.buzz-create-order-container .create-design .curved-btn.background a {
+  text-decoration: none;
+  color: #fff;
+}
+.buzzz-orders-page-container .content .table-filter-select {
+  border-radius: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 164x;
+  cursor: pointer;
+  line-height: 20px;
+  color: #020202;
+}
+
+.buzzz-orders-page-container .content .table-filter-order {
+  border-radius: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+  border-bottom: 3px solid #f5f5f5;
+  line-height: 20px;
+  color: #020202;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+}
+.buzzz-orders-page-container .content .table-filter-order:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #8100f6;
+}
+
+@media (max-width: 480px) {
+  .order_text {
+    padding-bottom: 20px;
+  }
+}
+
+.buzzz-orders-page-container .content .table-filter-all {
+  border-radius: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+  border-bottom: 3px solid #f5f5f5;
+  line-height: 20px;
+  background: none;
+  padding-left: 15px;
+  padding-right: 0px;
+  color: #020202;
+}
+
+.buzzz-orders-page-container .content .table-filter-all:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #8100f6;
+}
+
+.buzzz-orders-page-container .content .date-filter {
+  display: block;
+  width: 100%;
+  padding: 3px 12px;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  position: relative;
+  background-color: #fff;
+  top: -8px;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.buzzz-orders-table-container tbody .empty-box-state {
+  margin: auto;
+  border: none;
+  padding: 8rem 1rem;
+}
+
+/* ===================================
+  ORDERS STYLE ENDS HERE
+====================================== */
+
+/* ===================================
+  CREATE DESIGN START HERE
+====================================== */
+
+.dashboard-create-design {
+  width: 100%;
+  max-width: 1309px;
+}
+
+.dashboard-create-design .t-shirt {
+  padding-right: 9rem;
+  position: relative;
+  top: 10rem;
+}
+
+.colors-component-img {
+  display: none;
+}
+
+@media (max-width: 470px) {
+  .t-shirt {
+    display: none;
+  }
+  .colors-component-img {
+    display: block;
+  }
+}
+
+.dashboard-create-design h4 {
+  color: rgba(112, 71, 235, 1);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.dashboard-create-design h4 span {
+  color: rgba(112, 71, 235, 1);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.design-temp-component {
+  padding: 3rem 3rem;
+  max-width: 1800px;
+  margin: auto;
+  width: 100%;
+}
+
+.dashboard-create-design .create-design-decision {
+  margin-top: 2rem;
+  width: 100%;
+  position: relative;
+  max-width: 417px;
+  left: 22px;
+}
+
+.design-decision .undo {
+  max-width: 100%;
+  width: 130px;
+}
+
+.design-decision {
+  width: 389px;
+}
+
+/* ===================================
+  CREATE DESIGN ENDS HERE
+====================================== */
+
+/* ===================================
+  CREATE DESIGN ENDS HERE
+====================================== */
+
+/* ===================================
+    DASHBOARD REPORT STYLE STARTS HERE
+====================================== */
+
+.buzzz-dashboard-report-chart {
+  border: none;
+  border-radius: 9.16229px;
+  width: 518.59px;
+  height: 358.25px;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.08));
+}
+
+.buzzz-dashboard-report-chart .rc-title {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.3246px;
+  line-height: 22px;
+  color: #0a0024;
+}
+
+.buzzz-dashboard-report-chart .form-select {
+  width: 128.27px;
+  border: 1.37434px solid rgba(15, 57, 59, 0.1);
+  border-radius: 9.16229px;
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.6597px;
+  line-height: 18px;
+  color: rgba(10, 0, 36, 0.5);
+}
+
+.buzzz-dashboard-report-chart .form-select:focus {
+  border: 1.37434px solid rgba(15, 57, 59, 0.1);
+  border-radius: 9.16229px;
+  outline: none;
+  box-shadow: none;
+}
+
+.buzzz-dashboard-tc-report {
+  border: none;
+  border-radius: 4px;
+  width: 456px;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.08));
+}
+
+.buzzz-dashboard-tc-report hr {
+  height: 2px;
+}
+
+.buzzz-dashboard-tc-report .tc-title {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212121;
+}
+
+.buzzz-dashboard-tc-report .tc-name {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #212121;
+}
+
+.buzzz-dashboard-tc-report .tc-email {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5c5c66;
+}
+
+.buzzz-dashboard-tc-report .tc-amount {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4338ca;
+}
+
+/* ===================================
+    DASHBOARD REPORT STYLE ENDS HERE
+====================================== */
+
+/* ===================================
+  DASHBOARD STORE PAGE STYLE STARTS HERE
+====================================== */
+
+.buzzz-dashboard-store {
+  max-width: 1129px;
+}
+
+.buzzz-dashboard-store .card {
+  border: none;
+  border-radius: 14px;
+}
+
+.buzzz-dashboard-store .profile-pic {
+  width: 77.66px;
+  height: 77.66px;
+  margin-bottom: 16px;
+  margin-top: 34px;
+  margin-left: -54px;
+}
+
+.buzzz-dashboard-store .vl {
+  border-left: 1px solid #787486;
+  height: 28px;
+}
+
+.buzzz-dashboard-store .title {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.1332px;
+  line-height: 41px;
+  letter-spacing: 1.07111px;
+  color: #333333;
+  margin-bottom: 16px !important;
+}
+
+.buzzz-dashboard-store .content {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333;
+  max-width: 594px;
+  margin: auto;
+  margin-bottom: 16px !important;
+}
+
+.social_icons_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.buzzz-dashboard-store .social a {
+  color: #333333;
+  text-decoration: underline !important;
+}
+
+.buzzz-dashboard-store .social span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+  .user_img_share {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .btn_wrapper {
+    justify-content: space-between;
+    margin-right: 50px;
+  }
+}
+
+.buzzz-dashboard-store .store_input input {
+  width: 294.55px;
+  height: 34.5px;
+  border: 0.89259px solid #cfcfde;
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-size: 12.4963px;
+}
+
+.buzzz-dashboard-store .store_input input::placeholder {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.4963px;
+  line-height: 21px;
+}
+
+.store_button {
+  margin: 34px 0;
+}
+
+.buzzz-dashboard-store .store-btn {
+  margin-bottom: -35px;
+  margin-left: 16.07px;
+}
+
+.buzzz-dashboard-store .store-btn .curved-btn {
+  padding: 7px 20px;
+  background: #333333 !important;
+  border-radius: 8925px;
+  border: none;
+}
+
+.buzzz-dashboard-store .store-btn button {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.4963px;
+  line-height: 21px;
+}
+
+.buzzz-dashboard-store .buzzz-dashboard-grid .grid-container {
+  grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+.buzzz-dashboard-store .buzzz-dashboard-grid .grid-container h4,
+.buzzz-dashboard-store .buzzz-dashboard-grid .grid-container p {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.9288px;
+  line-height: 38px;
+  letter-spacing: 0.996439px;
+  color: #333333 !important;
+  text-align: center !important;
+}
+
+.buzzz-dashboard-store .curved-btn.store-action {
+  background: #ffffff;
+  border: 1px solid #787486;
+  border-radius: 6px;
+  padding: 8px 13px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #787486 !important;
+}
+
+/* ===================================
+  PAYOUT STYLE STARTS HERE
+====================================== */
+
+.buzzz-payout-page-container .content {
+  padding: 40px 30px 40px 40px;
+  border-radius: 14px;
+}
+
+.curve-btn.naked {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: transparent;
+  color: #000;
+  border-radius: 100px;
+  border: 1px solid #e6e6e6;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: var(--aeonik);
+  padding: 6px 24px;
+}
+
+.curve-btn.naked a {
+  color: #000;
+}
+
+.buzzz-payout-page-container .content .title-con h3,
+.buzzz-payout-page-container .content .title-con h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.buzzz-payout-page-container .content .title-con h4 {
+  font-weight: 600;
+}
+.buzzz-payout-page-container .content .title-con .curved-btn.background {
+  font-size: 12px;
+  line-height: 22px;
+  font-family: var(--aeonik);
+  padding: 6px 24px;
+  background-color: #8100f7;
+}
+.buzzz-payout-page-container .content .title-con .curved-btn.background a {
+  color: #fff;
+}
+
+.buzzz-payout-table-checkbox {
+  width: 14px;
+  height: 14px;
+}
+
+.buzzz--payout-table-container {
+  background: #ffffff;
+}
+
+.buzzz-payout-table-container .table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.buzzz-payout-table-container tbody tr,
+.buzzz-payout-table-container tbody tr td {
+  border: none !important;
+}
+
+.buzzz-payout-table-container .seperator {
+  height: 10px;
+}
+
+.buzzz-payout-table-container tbody {
+  border-top: 1px solid #f0f0f0 !important;
+}
+
+.buzzz-payout-table-container thead tr th {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #020202;
+  padding-bottom: 12px;
+}
+
+.buzzz-payout-table-container tbody tr td.company,
+.buzzz-payout-table-container tbody tr td.email,
+.buzzz-payout-table-container tbody .status p,
+.buzzz-payout-table-container .name-con p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #020202;
+}
+
+.buzzz-payout-table-container tbody tr td.email {
+  color: #6d6d6d;
+}
+
+.buzzz-payout-table-container .name-con .img-con {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.buzzz-payout-table-container .name-con .img-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buzzz-payout-table-container .name-con p {
+  font-weight: 500;
+}
+
+.buzzz-payout-table-container tbody .status p {
+  color: #00960f;
+  font-weight: 600;
+}
+
+.buzzz-payout-table-container tbody .status {
+  background: #dffae6;
+  border-radius: 4px;
+  padding: 6px 23px;
+}
+
+.buzzz-payout-table-container tbody .status-two {
+  background: rgba(201, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.buzzz-payout-table-container tbody .status-two p {
+  font-size: 14px;
+  color: rgba(255, 0, 0, 1);
+}
+
+.table-add-field-btn button,
+.table-filter-select {
+  border-radius: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #020202;
+}
+
+.buzzz-dashboard-store .curved-btn.store-action button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #787486 !important;
+}
+
+.table-add-field-btn button {
+  border: 1px solid #d6d6d6;
+  background-color: transparent;
+}
+
+/* ===================================
+  DASHBOARD STORE PAGE STYLE STOPS HERE
+====================================== */
+.buzzz--payout-table-container .content .pagination {
+  width: 100%;
+  max-width: 865px;
+  margin: auto;
+}
+
+.buzzz-payout-page-container .content .pagination-con h3,
+.buzzz-payout-page-container .content .pagination-con h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 29px;
+  color: #020202;
+}
+.buzzz-payout-page-container .content .pagination-con h3 span,
+.buzzz-payout-page-container .content .pagination-con h4 span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 29px;
+  color: #020202;
+}
+
+.buzzz-payout-page-container .content .pagination-con .prev {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 29px;
+  color: #020202;
+}
+
+.buzzz-payout-page-container .content .pagination-con .next {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 29px;
+  color: #020202;
+}
+
+.payout {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .payout {
+    flex-wrap: wrap;
+  }
+}
+
+.buzzz-payout-page-container .content .payout-overview .box .box-view h5 {
+  font-size: 14px;
+}
+
+.payout-overview {
+  border: 3px solid #f7f7f7;
+  border-radius: 10px;
+  padding: 1.5rem 1.5rem;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 15px;
+}
+
+@media (max-width: 1200px) {
+  .payout-overview {
+    width: 100%;
+    margin: 0px 0px 20px;
+  }
+}
+@media (max-width: 400px) {
+  .payout-overview {
+    flex-direction: column;
+  }
+}
+
+.buzzz-payout-page-container .content .payout-overview .box .box-view h6 {
+  font-size: 13px;
+  padding-top: 2px;
+  color: #727278;
+}
+
+.border_box {
+  height: 120px;
+  width: 1px;
+  border: 2px dashed #c4c4c4;
+}
+
+@media (max-width: 400px) {
+  .border_box {
+    transform: rotate(270deg);
+  }
+}
+
+.buzzz-payout-page-container .content .payout-overview .box {
+  width: 250px;
+}
+
+.buzzz-payout-page-container .content .payout-overview .box .box-view {
+  justify-content: space-between;
+}
+
+.buzzz-payout-page-container .content .payout-overview .box .price-view {
+  justify-content: space-between;
+}
+.buzzz-payout-page-container .content .payout-overview .box .price-view h2 {
+  font-size: 27px;
+  font-weight: 700;
+  padding-top: 1.5rem;
+}
+
+.buzzz-payout-page-container .content .payout-overview .box .price-view p {
+  position: relative;
+  top: 10px;
+  background: #ecfeee;
+  color: #00960f;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 10px;
+}
+.buzzz-payout-page-container .content .payout-overview .box .price-view .pending {
+  position: relative;
+  top: 10px;
+  background: rgba(255, 194, 51, 0.1);
+  color: #ffc233;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 10px;
+}
+
+.buzzz-payout-page-container .content .payout-overview .box h4 {
+  font-size: 14px;
+  color: #8100f7;
+  padding-top: 1.5rem;
+}
+
+.buzzz-payout-page-container .content .payout-overview-two .box .box-view h5 {
+  font-size: 14px;
+}
+
+.payout-overview-two {
+  border: 3px solid #f7f7f7;
+  border-radius: 10px;
+  padding: 1.5rem 1.5rem;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .payout-overview-two {
+    width: 100%;
+  }
+}
+
+.buzzz-payout-page-container .content .payout-overview-two .box .box-view h6 {
+  font-size: 13px;
+  padding-top: 2px;
+  color: #727278;
+}
+
+.buzzz-payout-page-container .content .payout-overview-two .box {
+  width: 333px;
+}
+
+.buzzz-payout-page-container .content .payout-overview-two .box .box-view {
+  justify-content: space-between;
+}
+
+.buzzz-payout-page-container .content .payout-overview-two .box .price-view h2 {
+  font-size: 27px;
+  font-weight: 700;
+  padding-top: 1.5rem;
+}
+
+.buzzz-payout-page-container .content .payout-overview-two .box h4 {
+  font-size: 14px;
+  color: #8100f7;
+  padding-top: 1.5rem;
+}
+
+.buzzz-payout-page-container .content .create-order h4 {
+  padding-top: 2em;
+  font-size: 35px;
+}
+
+.buzzz-payout-page-container .content .create-order p {
+  padding: 1em 1rem;
+  line-height: 27px;
+  font-size: 20px;
+}
+
+/* ===================================
+  DASHBOARD TEMPLATES PAGE STYLE STARTS HERE
+====================================== */
+
+.buzzz-dashboard-templates .all-templates {
+  width: 200px;
+  margin-top: 60px;
+}
+
+.buzzz-dashboard-templates .all-templates h3 {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #212121;
+
+  border-bottom: 0.5px solid #c4c4c4;
+  margin-top: 10px;
+}
+
+.buzzz-dashboard-templates .all-templates .all-temp-item > div {
+  border-bottom: 0.5px solid #c4c4c4;
+  margin-top: 10px;
+}
+
+.buzzz-dashboard-templates .all-templates .all-temp-item p {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+  color: #979797;
+}
+
+.buzzz-dashboard-templates .all-temp-card {
+  position: absolute;
+  margin-top: 200px;
+}
+
+.buzzz-dashboard-templates .card {
+  border-radius: 14px;
+  border: none;
+}
+
+.buzzz-dashboard-templates .all-temp-card > img {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  position: relative;
+  top: 25px;
+  left: 82px;
+}
+
+.buzzz-dashboard-templates .all-temp-card .card {
+  width: 240px;
+  background: #f5f5f5;
+  border-radius: 16px;
+}
+
+.buzzz-dashboard-templates .all-temp-card .card .card-body .card-cont {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.buzzz-dashboard-templates .all-temp-card .card .card-body .card-cont > h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.buzzz-dashboard-templates .all-temp-card .card .card-body .card-cont > p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #787486;
+}
+
+.buzzz-dashboard-templates .all-temp-card .card .card-body .card-btn {
+  margin-top: 16px;
+}
+
+.buzzz-dashboard-templates .all-temp-card .card .card-body .card-btn > button {
+  padding: 11px 31px;
+  background: #ffffff;
+  color: #000;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.buzzz-dashboard-templates h1 {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #212121;
+}
+
+.mobile_template_title {
+  display: none;
+}
+
+@media (max-width: 470px) {
+  .mobile_template_title {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+}
+
+.buzzz-dashboard-templates .temp-txt {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #212121;
+  margin-top: 11px;
+}
+
+.buzzz-dashboard-templates .all-temp-mobile .card {
+  border: 2px solid #f5f5f5;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.buzzz-dashboard-templates .all-temp-mobile .card .card-body {
+  padding: 8px 1rem;
+}
+
+.buzzz-dashboard-templates .template-section-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 5px;
+}
+
+.buzzz-dashboard-templates .template-section-card .card {
+  width: 250px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  border: none;
+}
+
+.buzzz-dashboard-templates .template-section-card .card .card-body {
+  align-self: center;
+}
+
+.buzzz-dashboard-templates .template-section-card .card .card-body .template-img {
+  border-radius: 10px;
+}
+
+.buzzz-dashboard-templates .template-section-card .card .card-body h3 {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+
+  margin-top: 24px;
+}
+
+.buzzz-dashboard-templates .template-section-card .card .card-body p {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+/* ===================================
+  DASHBOARD TEMPLATES PAGE STYLE STOPS HERE
+====================================== */
+
+/* ===================================
+   DASHBOARD STYLE STOPS HERE
+  ====================================== */
+
+/* payout table style */
+/* .table_data_text {
+} */
+
+.paid {
+  font-size: 14px;
+  color: #00960f;
+  position: relative;
+}
+
+.paid::after {
+  content: 'Paid';
+  position: absolute;
+  width: 70px;
+  height: 28px;
+  background: #ecfeee;
+  left: 0;
+  text-align: center;
+  /* z-index: -1 !important; */
+}
+
+.pending {
+  font-family: 'Aeonik';
+  font-style: normal;
+  /* font-weight: 500; */
+  font-size: 14px;
+  /* line-height: 17px; */
+  color: #ffc233;
+  position: relative;
+  text-align: center;
+  padding-right: 25px;
+}
+
+.pending::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 32px;
+  background: rgba(255, 194, 51, 0.1);
+  left: 2px;
+}
+/* payout table style */
+
+/* ===================================
+   MY BUZZ STYLE STOPS HERE
+  ====================================== */
+.my-buzzz-con {
+  margin-right: 2rem;
+}
+
+/* ===================================
+   MY BUZZ STYLE STOPS HERE
+  ====================================== */
+
+/* ===================================
+  DASHBOARD CART PAGE STYLE STARTS HERE
+====================================== */
+
+.cart_number {
+  position: relative;
+  height: inherit;
+}
+
+.cart_number img {
+  height: auto;
+  width: 100%;
+}
+
+.cart_number_value {
+  position: absolute;
+  top: -10%;
+  right: -2px;
+  background-color: red;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 6px;
+  padding-inline: 3px;
+}
+
+.buzzz-dashboard-cart .card {
+  border: none;
+  border-radius: 14px;
+}
+
+.buzzz-dashboard-cart .card .card-body {
+  padding: 2rem 4rem;
+}
+
+.buzzz-dashboard-cart .top h1 {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #212121;
+}
+
+.buzzz-dashboard-cart .top p {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline;
+  color: #0057c8;
+}
+
+.buzzz-dashboard-cart .bottom {
+  margin-top: 84px;
+}
+
+.buzzz-dashboard-cart h2 {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #5c5c66;
+}
+
+.buzzz-dashboard-cart .bottom .right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 32px;
+  column-gap: 130px;
+}
+
+.buzzz-dashboard-cart .card hr {
+  margin-top: 32px;
+}
+
+.buzzz-dashboard-cart .body {
+  margin-top: 32px;
+}
+
+.buzzz-dashboard-cart .body .productImg {
+  width: 97.5px;
+  height: 78px;
+  border-radius: 5.57143px;
+}
+
+.buzzz-dashboard-cart .body p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.buzzz-dashboard-cart .body .remove {
+  text-decoration: underline;
+  color: #0052ff;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.buzzz-dashboard-cart .body .remove_button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.buzzz-dashboard-cart .body .quantity {
+  border: 1px solid #c4c4c4;
+  width: 36px;
+  height: 27px;
+  text-align: center;
+  margin-top: -6px;
+}
+
+.buzzz-dashboard-cart .body .quantity > p {
+  margin-top: 4px;
+}
+
+.buzzz-dashboard-cart .body .right {
+  display: flex;
+  justify-content: space-around !important;
+  margin-right: -50px;
+}
+
+.buzzz-dashboard-cart .body .mobile .cart-img {
+  width: 97px;
+  height: 93px;
+  border: 0.5px solid #c4c4c4;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.05));
+  border-radius: 4px;
+}
+
+.buzzz-dashboard-cart .body .mobile .name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 15px;
+  margin-bottom: 5px !important;
+}
+
+.buzzz-dashboard-cart .body .mobile .free {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 12px;
+  color: #00960f;
+  margin-top: 10px;
+}
+
+.buzzz-dashboard-cart .body .mobile .disc {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 12px;
+  color: #ffc233;
+  margin-top: 10px;
+}
+
+.buzzz-dashboard-cart .body .counter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 32px;
+  column-gap: 10px;
+}
+
+.buzzz-dashboard-cart .subtotal {
+  margin-top: 64px;
+}
+
+.buzzz-dashboard-cart .subtotal p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.buzzz-dashboard-cart .cart-btn {
+  width: 100px;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 130px;
+}
+
+.buzzz-dashboard-cart .cart-btn button {
+  padding: 12px 19px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+/* ===================================
+  DASHBOARD CART PAGE STYLE STOPS HERE
+====================================== */
+
+/* ===================================
+  DASHBOARD SHIPPING PAGE STYLE STARTS HERE
+====================================== */
+
+.buzzz-dashboard-shipping .card {
+  border: none;
+  border-radius: 14px;
+}
+
+.buzzz-dashboard-shipping .card h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23.8904px;
+  line-height: 37px;
+  color: #16192c;
+}
+
+.buzzz-dashboard-shipping .card .shipping-form {
+  margin-top: 44.79px;
+}
+
+.buzzz-dashboard-shipping .buzzz-input-field-con label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #425466;
+}
+
+.buzzz-dashboard-shipping .buzzz-input-field-con input {
+  width: 450.82px;
+  border: 1.49315px solid #f7fafc;
+  border-radius: 8px;
+}
+
+.buzzz-dashboard-shipping .buzzz-input-field-con input::placeholder {
+  font-size: 15px;
+  color: #b5b5bd;
+  margin-left: -10px;
+}
+
+.buzzz-dashboard-shipping .card .info {
+  max-width: 470px;
+}
+
+.buzzz-dashboard-shipping .card .info p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #0000ff;
+}
+.buzzz-dashboard-shipping .card .bottom {
+  margin-top: 50px;
+}
+
+.buzzz-dashboard-shipping .check {
+  margin-top: 12px;
+}
+
+.buzzz-dashboard-shipping .shipping-btn {
+  width: 150px;
+}
+
+.buzzz-dashboard-shipping .shipping-btn button {
+  padding: 12px 25px;
+}
+
+/* ===================================
+  DASHBOARD SHIPPING PAGE STYLE STOPS HERE
+====================================== */
+
+/* ===================================
+  DASHBOARD REVIEW PAGE STYLE STARTS HERE
+====================================== */
+
+.buzzz-dashboard-review .card {
+  border: none;
+  border-radius: 14px;
+}
+
+.buzzz-dashboard-review .buzzz-dashboard-cart .bottom {
+  margin-top: 24px;
+}
+
+.buzzz-dashboard-review h1 {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #212121;
+}
+
+.buzzz-dashboard-review .edit {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0052ff;
+  margin-top: 5px;
+}
+
+.buzzz-dashboard-review .review-form input {
+  border: 1.49315px solid #f7fafc;
+  border-radius: 8px;
+}
+
+.buzzz-dashboard-review .bill-con {
+  background: #ffffff;
+  border: 1.49315px solid #f7fafc;
+  border-radius: 8px;
+  padding: 9px 19px;
+}
+
+.buzzz-dashboard-review select {
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  padding: 9px 19px;
+}
+
+.buzzz-dashboard-review .bill-con .right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.buzzz-dashboard-review .bill-con .right img {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+.buzzz-dashboard-review .shipping-address.card {
+  background: #f7fafc;
+  border-radius: 16px;
+}
+
+.buzzz-dashboard-review .shipping-address h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.buzzz-dashboard-review .shipping-address .edit {
+  font-size: 10px;
+  margin-top: -2px;
+}
+
+.buzzz-dashboard-review .shipping-address .ship-add {
+  max-width: 195px;
+  margin-top: 26px;
+}
+
+.buzzz-dashboard-review .shipping-address .ship-add p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.buzzz-dashboard-review .shipping-safety.card {
+  background: #e5f5e4;
+  border-radius: 16px;
+}
+
+.buzzz-dashboard-review .shipping-safety.card p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.buzzz-dashboard-review .review-btn {
+  width: 242px;
+  margin-top: 60px;
+  padding-bottom: 50px;
+}
+
+.buzzz-dashboard-review .review-btn button {
+  box-shadow: 0px 21.5158px 43.0316px rgba(0, 0, 0, 0.16);
+  border-radius: 16px !important;
+}
+
+/* ===================================
+  DASHBOARD REVIEW PAGE STYLE STOPS HERE
+====================================== */
+
+

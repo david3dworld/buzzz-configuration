@@ -1,0 +1,148 @@
+.walletContainer {
+  width: 98%;
+  background: #ffffff;
+  height: auto;
+  border-radius: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .walletContainer {
+    width: 100vw;
+  }
+}
+
+.transaction_header_container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .transaction_header_container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.export_btn {
+  padding: 8px 16px;
+  width: 120px;
+  height: 33px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+}
+
+.transactionHeader {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #212121;
+}
+
+.transaction_card_container {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .transaction_card_container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.transaction_card {
+  width: 332px;
+  height: 127px;
+  border: 3px solid #f7f7f7;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .transaction_card {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.transaction_balance {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .transaction_balance {
+    height: 80px;
+  }
+}
+
+.balance_text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #727278;
+}
+
+.price {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1c1c1c;
+  margin-top: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .buttonContainer {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+}
+
+.btn {
+  margin: 10px 0;
+  background: #ffffff;
+  box-shadow: 6.56265px 10.8517px 31.4372px rgba(39, 75, 137, 0.12);
+  border-radius: 23.7896px;
+  width: 184px;
+  height: 48px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnImg {
+  padding-right: 10px;
+}
+
+/* tabs section */
+
+.tabsSection {
+  margin-top: 5rem;
+}

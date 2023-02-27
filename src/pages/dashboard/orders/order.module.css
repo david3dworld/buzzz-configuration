@@ -1,0 +1,9 @@
+.order_delete_btn {
+  background-color: red;
+  color: white;
+  border: 0;
+  outline: 0;
+  width: 120px;
+  height: 30px;
+  border-radius: 7px;
+}

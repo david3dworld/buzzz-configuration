@@ -1,0 +1,258 @@
+.selectContainer {
+  width: 98%;
+  background: #ffffff;
+  height: auto;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.arrow {
+  margin-right: 10px;
+  padding-top: 8px;
+}
+@media (max-width: 600px) {
+  .arrow {
+    display: none;
+  }
+}
+
+.title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #7047eb;
+}
+
+.subtitle {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+@media (max-width: 600px) {
+  .subtitle {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.product_card_container {
+  width: 85%;
+  padding: 53px 30px;
+  height: auto;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .product_card_container {
+    width: 100%;
+    border: 0;
+    padding: 20px;
+    margin-top: 1rem;
+  }
+}
+
+.selectBoxContainer {
+  display: flex;
+  width: 200px;
+  margin-left: -21px;
+
+  /* justify-content: space-between; */
+}
+
+@media (max-width: 600px) {
+  .selectBoxContainer {
+    flex-direction: column-reverse;
+    margin-left: -25px;
+    width: 80%;
+  }
+}
+@media (max-width: 350px) {
+  .selectBoxContainer {
+    flex-direction: column-reverse;
+    margin-left: -45px;
+  }
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+}
+
+.down {
+  position: absolute;
+  right: 20px;
+  top: 46px;
+}
+.mobile_icon {
+  display: none;
+}
+@media (max-width: 600px) {
+  .down {
+    position: absolute;
+    right: -129px;
+    top: 25px;
+    display: none;
+  }
+
+  .mobile_icon {
+    display: block;
+    position: absolute;
+    left: 300px;
+    top: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .mobile_icon {
+    display: block;
+    position: absolute;
+    right: -130px;
+    top: 25px;
+  }
+}
+@media (max-width: 400px) {
+  .mobile_icon {
+    display: block;
+    position: absolute;
+    right: -120px;
+    top: 25px;
+  }
+}
+
+@media (max-width: 360px) {
+  .mobile_icon {
+    display: block;
+    position: absolute;
+    left: 295px;
+    top: 25px;
+  }
+}
+@media (max-width: 350px) {
+  .mobile_icon {
+    display: block;
+    position: absolute;
+    left: 280px;
+    top: 25px;
+  }
+}
+.select {
+  padding: 10px;
+  width: 164px;
+  /* height: 44px; */
+  border: 1px solid #626874;
+  border-radius: 8px;
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #626874;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+@media (max-width: 600px) {
+  .select {
+    width: 80vw;
+  }
+}
+@media (max-width: 375px) {
+  .select {
+    width: 85vw;
+  }
+}
+@media (max-width: 360px) {
+  .select {
+    width: 85vw;
+  }
+}
+@media (max-width: 350px) {
+  .select {
+    width: 90vw;
+  }
+}
+
+.label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+@media (max-width: 600px) {
+  .label {
+    display: none;
+  }
+}
+
+.product_cards_section {
+  width: 100%;
+  padding: 26px 20px;
+  height: auto;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .product_cards_section {
+    border: 0;
+    margin-top: 0rem;
+    padding: 0;
+  }
+}
+
+.card_grid {
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 5px;
+  place-items: center;
+}
+
+@media (max-width: 600px) {
+  .card_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    margin-left: -25px;
+  }
+}

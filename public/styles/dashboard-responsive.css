@@ -1,0 +1,212 @@
+@media (max-width: 1299.98px) {
+  /* ===================================
+    DASHBOARD REPORT STYLE STARTS HERE
+====================================== */
+  .buzzz-dashboard-report .d-xl-flex {
+    display: block !important;
+    text-align: -webkit-center;
+  }
+  /* ===================================
+    DASHBOARD REPORT STYLE STOPS HERE
+====================================== */
+}
+
+@media (min-width: 1200px) {
+}
+
+/* col-xl */
+@media (max-width: 1199.98px) {
+  /* ===================================
+  DASHBOARD TEMPLATES PAGE STYLE STARTS HERE
+====================================== */
+  .buzzz-dashboard-templates .template-section-card {
+    grid-template-columns: 1fr 1fr;
+    text-align: -webkit-center;
+    column-gap: 0;
+  }
+  /* ===================================
+  DASHBOARD TEMPLATES PAGE STYLE STOPS HERE
+====================================== */
+}
+
+/* col-lg */
+@media (max-width: 991.98px) {
+  .mobile-dashboard-header {
+    display: block;
+  }
+
+  .buzzz-dashboard-container .sidebar-container {
+    display: none;
+  }
+
+  .buzzz-dashboard-container .content-conteiner {
+    margin-left: 0px;
+  }
+
+  .buzzz-dashboard-sidebar-container {
+    height: 100%;
+  }
+  /* ===================================
+    DASHBOARD REPORT STYLE STARTS HERE
+====================================== */
+  .buzzz-dashboard-report-chart {
+    width: 646px !important;
+  }
+
+  .buzzz-dashboard-report-chart .recharts-wrapper,
+  .recharts-surface {
+    width: 585px !important;
+  }
+
+  .buzzz-dashboard-tc-report {
+    width: 646px;
+  }
+  /* ===================================
+    DASHBOARD REPORT STYLE ENDS HERE
+====================================== */
+
+  /* ===================================
+  DASHBOARD TEMPLATES PAGE STYLE STARTS HERE
+====================================== */
+  .buzzz-dashboard-templates .template-section-card {
+    grid-template-columns: 1fr 1fr;
+    text-align: -webkit-center;
+    column-gap: 0;
+  }
+  /* ===================================
+  DASHBOARD TEMPLATES PAGE STYLE STOPS HERE
+====================================== */
+  
+}
+
+@media (max-width: 867.98px) {
+  /* ===================================
+    DASHBOARD REPORT STYLE STARTS HERE
+====================================== */
+  .buzzz-dashboard-report.container {
+    max-width: none !important;
+  }
+
+  .buzzz-dashboard-report-chart {
+    width: 727px !important;
+  }
+
+  .buzzz-dashboard-report-chart .recharts-wrapper,
+  .recharts-surface {
+    width: 700px !important;
+  }
+
+  .buzzz-dashboard-tc-report {
+    width: 727px !important;
+  }
+  /* ===================================
+    DASHBOARD REPORT STYLE ENDS HERE
+====================================== */
+}
+
+@media (min-width: 767.98px) {
+}
+
+/* col-md */
+@media (max-width: 767.98px) {
+  /* ===================================
+    DASHBOARD REPORT STYLE STARTS HERE
+====================================== */
+  .buzzz-dashboard-report .card {
+    padding: 0 !important;
+  }
+
+  .buzzz-dashboard-report .card .card-body {
+    padding: 1rem 0rem !important;
+  }
+
+  .buzzz-dashboard-report.container {
+    padding: 0;
+  }
+
+  .buzzz-dashboard-report-chart {
+    width: 100% !important;
+  }
+
+  .buzzz-dashboard-report-chart .recharts-wrapper,
+  .recharts-surface {
+    width: 100% !important;
+  }
+
+  .buzzz-dashboard-tc-report {
+    width: 100% !important;
+  }
+  /* ===================================
+    DASHBOARD REPORT STYLE ENDS HERE
+====================================== */
+
+  /* ===================================
+  DASHBOARD TEMPLATES PAGE STYLE STARTS HERE
+====================================== */
+  .buzzz-dashboard-templates .template-section-card {
+    grid-template-columns: 1fr;
+    text-align: -webkit-center;
+  }
+  .buzzz-dashboard-templates h1,
+  .temp-txt {
+    text-align: center;
+  }
+
+  /* ===================================
+  DASHBOARD TEMPLATES PAGE STYLE STOPS HERE
+====================================== */
+
+/* ===================================
+  DASHBOARD SHIPPING PAGE STYLE STARTS HERE
+====================================== */
+
+.buzzz-dashboard-shipping .card h1 {
+  text-align: center !important;
+}
+
+.buzzz-dashboard-shipping .card .bottom {
+  margin: auto;
+  display: block !important;
+  max-width: 300px;
+  margin-top: 70px;
+  text-align: center;
+}
+.buzzz-dashboard-shipping .card .bottom .form-check .form-check-input {
+  float: none;
+  margin-right: 9px;
+}
+
+.buzzz-dashboard-shipping .card .bottom > div {
+  max-width: 168px !important;
+  margin: auto;
+}
+/* ===================================
+  DASHBOARD SHIPPING PAGE STYLE STOPS HERE
+====================================== */
+
+.buzzz-dashboard-cart .card .card-body {
+  padding: 1rem 1rem;
+}
+}
+
+@media (max-width: 662px) {
+  .buzzz-dashboard-shipping .buzzz-input-field-con input {
+    width: 100%;
+  }
+  .buzzz-dashboard-shipping .card .info p {
+    font-size: 14px;
+  }
+  .buzzz-dashboard-shipping .card .bottom {
+    margin-top: 30px;
+  }
+  .buzzz-dashboard-shipping .card h1 {
+    font-size: 20px;
+  }
+}
+
+/* col-sm */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 299.98px) {
+}

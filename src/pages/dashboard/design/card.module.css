@@ -1,0 +1,19 @@
+.design_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.cardImg {
+  width: 172px;
+  height: 172px;
+}
+
+@media (max-width: 900px) {
+  .design_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    place-items: center;
+  }
+}

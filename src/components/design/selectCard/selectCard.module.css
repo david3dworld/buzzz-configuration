@@ -1,0 +1,31 @@
+.card {
+  margin: 20px 0;
+  /* height: 290px; */
+}
+
+.cardReview {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cardText {
+  width: 150px;
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.79632px;
+  /* line-height: 18px; */
+  color: #000000;
+  margin: 0;
+}
+
+.reviewText {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5px;
+  line-height: 6px;
+  /* margin: 0; */
+  padding-right: 10px;
+}

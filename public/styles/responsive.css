@@ -1,0 +1,2354 @@
+@media (max-width: 1299.98px) {
+  .buzzz-start-designing-section .design1 {
+    left: 370px;
+    top: 511px;
+  }
+  /* ===================================
+   DASHBOARD STYLE STARTS HERE
+  ====================================== */
+  .dashboard_join_card {
+    flex: 5;
+  }
+  /* ===================================
+   DASHBOARD STYLE STOPS HERE
+  ====================================== */
+
+  /* ===================================
+   MY BUZZ STYLE STOPS HERE
+  ====================================== */
+  .my-buzzz-card-con {
+    flex-direction: column;
+  }
+  .my-buzzz-card-img-con img {
+    width: 100%;
+    height: 371px;
+    /* object-fit: cover; */
+  }
+  .buzzz-dashboard-grid .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* ===================================
+   MY BUZZ STYLE STOPS HERE
+  ====================================== */
+}
+
+@media (min-width: 1200px) {
+}
+
+/* col-xl */
+@media (max-width: 1199.98px) {
+  .about2_wrap {
+    display: block;
+    grid-gap: 150px;
+    gap: 150px;
+  }
+  .about2_wrap h1 {
+    text-align: center;
+  }
+  .about2_wrap p {
+    padding: 0;
+    text-align: center !important;
+  }
+  .about2_img {
+    text-align: center !important;
+    margin-top: 20px;
+  }
+  .about7_head {
+    margin: auto;
+  }
+
+  .about7_body {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    margin: auto;
+  }
+  .about7_card {
+    margin: auto;
+  }
+  .buzzz_design_container .design_section6_cards {
+    display: block;
+    text-align: -webkit-center;
+  }
+  .buzzz_design_container .design_section2 h1 {
+    font-size: 100px;
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 700;
+  }
+  .design_section2_content {
+    gap: 20px;
+  }
+  /* ===================================
+ LANDING STYLE STARTS HERE
+  ====================================== */
+  .landing_section1 p {
+    font-size: 96px;
+  }
+  .landing_section2_item {
+    margin-bottom: 100px;
+    flex-direction: column;
+  }
+  .section2_mob {
+    display: flex;
+  }
+  .section2_full {
+    display: none;
+  }
+  .landing-section5-card {
+    padding-inline: 1.8rem;
+    padding-block: 2rem;
+    flex-direction: column-reverse;
+  }
+  .landing-section5-card-content h2 {
+    line-height: 40px;
+  }
+  .landing_section5 {
+    margin: 20px 50px;
+  }
+  .landing-section5-card-content {
+    flex: 2.4;
+  }
+
+  /* ===================================
+ LANDING STYLE STARTS HERE
+  ====================================== */
+  /* ===================================
+ START DESIGNING SECTION STYLE STARTS HERE
+  ====================================== */
+  .buzzz-start-designing-section .design-images {
+    margin-bottom: 10em;
+  }
+
+  .buzzz-start-designing-section .design1 {
+    position: absolute;
+    max-width: 23em;
+    left: 249px;
+    top: 486px;
+  }
+  .buzzz-start-designing-section .design2 {
+    max-width: 23em;
+    position: absolute;
+  }
+
+  /* ===================================
+ START DESIGNING SECTION STYLE STOPS HERE
+  ====================================== */
+
+  /* ===================================
+   DASHBOARD STYLE STARTS HERE
+====================================== */
+  .dashboard_home_main {
+    flex-direction: column;
+  }
+  .dashboard_chart {
+    width: 100%;
+  }
+  .dashboard_join_card {
+    width: 100%;
+  }
+  /* ===================================
+   DASHBOARD STYLE STOPS HERE
+====================================== */
+
+  /* ===================================
+   LANDING STYLE STOPS HERE
+====================================== */
+  .new_landing_hero_content h1 {
+    font-size: 30px;
+  }
+  .new_hero_landing_btns a {
+    font-size: 14px;
+    padding: 16px 16px;
+  }
+  .new_landing_hero {
+    padding: 95px 62px;
+  }
+  .landing_section2 {
+    margin-inline: 50px;
+    padding: 116px 25px;
+  }
+  .landing_section2_wrap {
+    margin-inline: 0px;
+  }
+  .landing_section2_content h1 {
+    font-size: 46px;
+    width: 70px;
+    height: 70px;
+  }
+  .landing_section2_content h2 {
+    font-size: 34px;
+  }
+  .landing_section2_content h3 {
+    font-size: 20px;
+  }
+  /* ===================================
+   LANDING STYLE STOPS HERE
+====================================== */
+}
+
+/* col-lg */
+@media (max-width: 991.98px) {
+  /* ===================================
+   LANDING STYLE STOPS HERE
+====================================== */
+  .landing_section4_card {
+    padding: 56px 60px;
+    margin: 0 20px;
+  }
+  .landing_section6 {
+    margin: 60px 40px;
+    padding: 70px 40px;
+  }
+  .landing_section6_content h1 {
+    font-size: 44px;
+  }
+  .landing_hero_prods {
+    display: flex;
+  }
+  /* ===================================
+   LANDING STYLE STOPS HERE
+====================================== */
+  /* about */
+  .about6 h1 {
+    font-size: 36px;
+    padding: 16px 0 30px 0;
+    position: relative;
+    max-width: 991px;
+  }
+  .about1 h1 span::after {
+    position: absolute;
+    bottom: -22px;
+    right: 0;
+    content: '';
+    background-image: url(/svg/about_title.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 80px;
+    transform: translateY(50%) translateX(20%);
+  }
+  .about5_img .about5_img_wrap:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+    content: '';
+    background-image: url(/images/resources_after.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1250px;
+    height: 500px;
+    transform: translateY(26px) translateX(26px);
+    z-index: -1;
+  }
+
+  .about5_img .about5_img_wrap:before {
+    position: absolute;
+    bottom: 50%;
+    right: 30%;
+    content: '';
+    display: none;
+    background-image: url(/images/about5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 132px;
+    height: 118px;
+    transform: translateY(50%) translateX(0%);
+  }
+  .about5_content {
+    display: BLOCK;
+    grid-gap: 150px;
+    gap: 150px;
+    margin: 0 46px;
+  }
+
+  .about4_content h1 {
+    font-size: 26px;
+    padding-top: 29px;
+    font-weight: 700;
+  }
+  .about4_content p {
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  /* ===================================
+    MOBILE AUTH STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-auth-layout-container .content {
+    padding-top: 60px !important;
+  }
+
+  .buzzz-auth-layout-container .content .title {
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #000000;
+  }
+
+  /* ===================================
+    MOBILE AUTH STYLE STARTS HERE
+    ====================================== */
+  /* ===================================
+    MOBILE HEADER STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-app-mobile-header-con .middle-links {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .buzzz-app-mobile-header-con .middle-links a {
+    display: block !important;
+  }
+
+  .buzzz-mobile-hamburger-menu .curved-btn {
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #212934 !important;
+  }
+
+  .login-link {
+    background-color: #f5f8fa;
+
+    height: 72px;
+  }
+
+  .login-link a:first-child {
+    color: #ffffff !important;
+  }
+
+  .login-link .curved-btn {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 35px;
+    padding: 12px 24px;
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+  }
+
+  /* ===================================
+      MOBILE HEADER STYLE ENDS HERE
+      ====================================== */
+
+  /* ===================================
+    FOOTER MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .footer-mobile-top ul {
+    padding: 0 !important;
+    margin-top: 32.76px;
+  }
+
+  .footer-mobile-top .footer-header button {
+    all: unset !important;
+    text-transform: uppercase !important;
+    font-family: 'Inter' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 32px !important;
+    cursor: pointer !important;
+    margin-bottom: 15px !important;
+  }
+  .footer-mobile-top .footer-header .accordion-button {
+    padding: 0px !important;
+    color: #ffffff !important;
+  }
+
+  .footer-mobile-top .footer-header .accordion-button:focus {
+    border: none !important;
+  }
+
+  .footer-mobile-top .accordion-item {
+    border: none !important;
+  }
+
+  .footer-mobile-top .accordion-body {
+    padding: 0px !important;
+  }
+
+  .icon-con2 {
+    display: none;
+  }
+
+  /* ===================================
+    FOOTER MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    CONTACT MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-contact-us-container .title-con h2 {
+    font-size: 80px;
+  }
+
+  .buzzz-contact-us-container .contact-us-grid-con {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ===================================
+    CONTACT MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    CONTACT MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-contact-us-form-page {
+    padding: 0;
+  }
+
+  .buzzz-contact-us-form-page .title-con h3 {
+    font-size: 32px;
+  }
+
+  .buzzz-contact-us-form-page .title-con p {
+    font-size: 16px;
+  }
+
+  .buzzz-contact-us-form-page .form-info p {
+    font-size: 16px;
+  }
+
+  .buzzz-contact-us-form-page .contact-us-grid-con {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ===================================
+    CONTACT MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    DESIGN MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz_design_container .design_section1 {
+    padding: 230px 0;
+    text-align: left;
+  }
+
+  .buzzz_design_container .design_section1_img1 {
+    top: -12px;
+  }
+
+  .buzzz_design_container .design_section1_img2 {
+    top: 440px;
+  }
+
+  .buzzz_design_container .design_section2 h1 {
+    font-size: 100px;
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .buzzz_design_container .design_section2_content {
+    display: block;
+  }
+
+  .buzzz_design_container .design_section3_cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .buzzz_design_container .design_section4_head {
+    display: block;
+  }
+
+  .buzzz_design_container .design_section4_body {
+    display: block;
+  }
+
+  .buzzz_design_container .design_section4_body .design_section4_img {
+    text-align-last: center;
+  }
+
+  .buzzz_design_container .design_section4_body .design_section4_content {
+    padding-top: 45px;
+  }
+
+  .buzzz_design_container .design_section5_wrap {
+    display: block;
+  }
+
+  .buzzz_design_container .design_section5_img img {
+    max-width: 700px;
+  }
+
+  .buzzz_design_container .design_section6_cards {
+    display: block;
+    text-align: -webkit-center;
+  }
+
+  /* ===================================
+    DESIGN MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    RESOURCES MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-resources-container .content-flex {
+    display: block !important;
+  }
+
+  .buzzz-resources-container .content-flex h3 {
+    max-width: 900px;
+  }
+
+  .buzzz-resources-container .content-flex .second {
+    max-width: 870px;
+  }
+
+  .buzzz-resources-container .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .buzzz-subscribe-con {
+    padding: 120px 0 70px 0 !important;
+  }
+
+  .buzzz-subscribe-con .content h2 {
+    font-size: 38px;
+  }
+
+  .buzzz-subscribe-con .content p {
+    font-size: 25px;
+  }
+
+  .buzzz-subscribe-con .content .btn-con {
+    margin-top: 37px;
+  }
+
+  /* ===================================
+    RESOURCES MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    404 MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-notfound-container {
+    text-align: -webkit-center;
+  }
+
+  .buzzz-notfound-container .notfound-content {
+    display: block !important;
+  }
+
+  .buzzz-notfound-container .notfound_input input {
+    max-width: 505px;
+  }
+
+  /* ===================================
+    404 MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+   DASHBOARD STYLE STOPS HERE
+====================================== */
+  .dashboard_page {
+    padding-inline: 40px;
+    margin-right: 0;
+    background-color: #fff;
+  }
+  .dashboard_page .buzzz-dashboard-header-container {
+    display: none;
+  }
+  .dashboard_page_greeting {
+    padding-top: 40px;
+  }
+  /* ===================================
+   DASHBOARD STYLE STOPS HERE
+====================================== */
+
+  /* ===================================
+   DASHBOARD STYLE STOPS HERE
+  ====================================== */
+
+  /* ===================================
+   MY BUZZ STYLE STOPS HERE
+  ====================================== */
+  .my-buzzz-con {
+    margin: 0;
+  }
+  /* ===================================
+   MY BUZZ STYLE STOPS HERE
+  ====================================== */
+
+  /* ===================================
+   PREVIEW STYLE STOPS HERE
+  ====================================== */
+  .preview_body_controls h1 {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .preview_body_controls h3 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .preview_controls_size_con span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  /* ===================================
+   PREVIEW STYLE STOPS HERE
+  ====================================== */
+}
+
+@media (max-width: 867.98px) {
+  /* ===================================
+ START DESIGNING SECTION STYLE STARTS HERE
+====================================== */
+  .buzzz-start-designing-section .design-images {
+    margin-bottom: 5em;
+  }
+  .buzzz-start-designing-section .design1 {
+    max-width: 20em;
+    left: 200px;
+    top: 450px;
+  }
+  .buzzz-start-designing-section .design2 {
+    position: absolute;
+    max-width: 20em;
+    /* left: 610px;
+    top: 439px; */
+  }
+  /* ===================================
+ START DESIGNING SECTION STYLE STOPS HERE
+====================================== */
+  /* market place */
+  .buzzz-prduct-page-container .navigation {
+    background: #e8e8e8;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 3%);
+    border-radius: 60px;
+    grid-gap: 128px;
+    grid-gap: 80px;
+    gap: 80px;
+    width: 100%;
+    max-width: 900px;
+    padding: 17px 27px;
+    margin: 32px 0;
+  }
+
+  /* ===================================
+ DASHBPOARD STYLE STOPS HERE
+====================================== */
+  .dashboard_customer_table .content {
+    padding: 40px 0;
+  }
+  /* ===================================
+ DASHBPOARD STYLE STOPS HERE
+====================================== */
+  .about2_wrap {
+    display: block;
+    grid-gap: 150px;
+    gap: 150px;
+  }
+  .about2_wrap h1 {
+    text-align: center;
+  }
+  .about2_wrap p {
+    padding: 0;
+    text-align: center !important;
+  }
+  .about2_img {
+    text-align: center !important;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 767.98px) {
+}
+
+/* col-md */
+@media (max-width: 767.98px) {
+  /* ===================================
+ LANDING STYLE STOPS HERE
+====================================== */
+  .landing_section4_card {
+    margin: 0 40px;
+  }
+  .landing-section5-card-content > h1 {
+    font-size: 28px;
+  }
+  .landing-section5-card-content h2 {
+    font-size: 16px;
+    padding: 10px 0;
+    line-height: 24px;
+  }
+  .landing-section5-card {
+    border-radius: 20px;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  .landing_section5_head {
+    margin-bottom: 60px;
+  }
+  .landing_section5_head h1 {
+    font-size: 30px;
+  }
+  .landing_section1 p {
+    font-size: 40px;
+    line-height: 80px;
+  }
+  .new_landing_hero {
+    flex-direction: column;
+    padding: 15px 32px;
+  }
+  .landing_section2_head h1 {
+    font-size: 30px;
+  }
+  .landing_section2 {
+    padding: 66px 15px;
+    margin-inline: 20px;
+  }
+  .landing_section2_wrap {
+    margin: 0px 0;
+    padding: 56px 15px;
+  }
+  .landing_section2_content h2 {
+    font-size: 24px;
+  }
+  .landing_section2_content h3 {
+    font-size: 16px;
+  }
+  landing_section2_item {
+    gap: 60px;
+  }
+  .landing_section3 h1 {
+    font-size: 30px;
+    padding-left: 40px;
+  }
+  .slide_img_con {
+    margin-inline: 6px;
+  }
+  .landing_section4_card h1 {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  .landing_section4_card {
+    padding: 56px 20px;
+    margin: 0 20px;
+  }
+  .landing_section4_name {
+    flex-direction: column;
+  }
+  .landing_section5 {
+    margin: 20px 0px;
+    padding: 80px 0px;
+    border-radius: 0;
+  }
+  .landing-section5-card {
+    padding-inline: 0;
+    gap: 0;
+  }
+  .landing_section1_items {
+    height: 60%;
+  }
+  .landing_section6 {
+    margin: 60px 0;
+    border-radius: 0;
+    padding: 70px 24px;
+  }
+  .landing_section6_content {
+    flex: 1.3;
+  }
+  .landing_section6_image {
+    flex: 1;
+  }
+  .landing_section6_content h1 {
+    font-size: 24px;
+  }
+  .landing_section6_content h3 {
+    font-size: 10px;
+  }
+  .landing_section6_login {
+    display: none;
+  }
+  .landing_section6_content_link a {
+    padding: 6px 12px;
+  }
+  /* ===================================
+ LANDING STYLE STOPS HERE
+====================================== */
+  /* market-place */
+  .buzzz-prduct-page-container .grid-container,
+  .shipping-rate-con .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 64px;
+    grid-row-gap: 64px;
+    row-gap: 64px;
+    grid-column-gap: 20px;
+    -moz-column-gap: 20px;
+    grid-column-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .buzzz-prduct-page-container .navigation .curved-btn {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: var(--aeonik);
+    color: #000;
+    padding: 16px 21px;
+    border-radius: 60px;
+  }
+  /* market-place */
+  .buzzz-prduct-page-container .grid-container,
+  .shipping-rate-con .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 64px;
+    grid-row-gap: 64px;
+    row-gap: 64px;
+    grid-column-gap: 20px;
+    -moz-column-gap: 20px;
+    grid-column-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .product-card-content {
+    flex-direction: column;
+  }
+
+  .buzzz-product-card-container .text-con p,
+  .buzzz-store-owner-card-con .rating-con p {
+    font-size: 8px;
+    line-height: 10px;
+    line-height: 12px;
+  }
+
+  .buzzz-prduct-page-container .app-container {
+    padding: 0 1rem;
+  }
+
+  .buzzz-prduct-page-container .navigation .curved-btn {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: var(--aeonik);
+    color: #000;
+    padding: 16px 21px;
+    border-radius: 60px;
+  }
+
+  .buzzz-prduct-page-container .navigation .curved-btn {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: var(--aeonik);
+    color: #000;
+    padding: 16px 27px;
+    border-radius: 60px;
+  }
+
+  /* about */
+  .about1 h1 {
+    padding: 40px;
+    font-size: 46px;
+    font-weight: 700;
+    color: rgba(255, 170, 15, 1);
+    text-align: center;
+  }
+  .about1 h1 span::after {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    right: 0;
+    content: '';
+    background-image: url(/svg/about_title.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 436px;
+    height: 176px;
+    transform: translateY(50%) translateX(20%);
+  }
+
+  /* ===================================
+    CONTACT US MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-contact-us-container .contact-us-grid-con {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  /* ===================================
+    CONTACT US MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    CONTACT MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-contact-us-form-page {
+    padding: 0;
+  }
+
+  .buzzz-contact-us-form-page .title-con h3 {
+    font-size: 32px;
+  }
+
+  .buzzz-contact-us-form-page .title-con p {
+    font-size: 16px;
+  }
+
+  .buzzz-contact-us-form-page .form-info p {
+    font-size: 16px;
+  }
+
+  .buzzz-contact-us-form-page .contact-us-grid-con {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  /* ===================================
+    CONTACT MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  /* ===================================
+    DESIGN MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz_design_container .design_section1 h1 {
+    font-size: 52px !important;
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .buzzz_design_container .design_section1 h3 {
+    font-size: 22px !important;
+  }
+
+  .buzzz_design_container .design_section2 h1 {
+    font-size: 48px;
+  }
+
+  .buzzz_design_container .design_section3 h1 {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .buzzz_design_container .design_section3_cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 50px 0;
+  }
+
+  .buzzz_design_container .design_section4_head h1 {
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .buzzz_design_container .design_section4_head h2 {
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 20px;
+  }
+
+  .buzzz_design_container .design_section4_right h3 {
+    font-size: 14px;
+  }
+
+  .buzzz_design_container .design_section4_right p {
+    font-size: 12px;
+  }
+
+  .buzzz_design_container .design_section5_content {
+    grid-template-columns: 1fr;
+    padding: 40px 30px;
+  }
+
+  .buzzz_design_container .design_section6 h1 {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .buzzz_design_container .design_section6_img {
+    width: 510px;
+  }
+
+  .buzzz_design_container .design_section6_card h2 {
+    font-size: 26px;
+  }
+
+  .buzzz_design_container .design_section7 h1 {
+    font-size: 34px;
+    text-align: left;
+  }
+
+  /* ===================================
+    DESIGN MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    RESOURCES MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-resources-container .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* ===================================
+    RESOURCES MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    MY BUZZZ STYLE STOPS HERE
+    ====================================== */
+  .my-buzzz-wrap {
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .buzzz-dashboard-grid .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-gap: 10px;
+  }
+  .buzzz-dashboard-grid .card-body {
+    padding: 0rem;
+  }
+  .buzzz-dashboard-grid .app-container {
+    padding: 0rem;
+  }
+  .my-buzzz-con {
+    background-color: #fff;
+    padding-top: 2rem;
+  }
+  .my-buzzz-card-img-con img {
+    height: 301px;
+  }
+  .buzzz-dashboard-home h1 {
+    font-size: 26px;
+  }
+  .buzzz-dashboard-home-side .side-vertical {
+    display: none;
+  }
+
+  /* ===================================
+    MY BUZZZ STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    ACCOUNT STYLE STOPS HERE
+    ====================================== */
+  .dashboard-account-settings {
+    padding-inline: 1.4rem;
+  }
+  .account-upload-con {
+    min-width: 30px;
+  }
+  .profile-name-img-con {
+    min-width: 38px;
+  }
+  .dashboard-settings .image-upload {
+    grid-gap: 20px;
+  }
+  .dashboard-settings .image-upload .profile-name-img .profile-name h4 {
+    font-size: 12px;
+  }
+  .dashboard-settings .image-upload .profile-name-img .profile-name p {
+    font-size: 10px;
+  }
+  .dashboard-account-settings .delete-account .del-account p {
+    padding-right: 1rem;
+  }
+  .react-switch-label {
+    top: 0px;
+  }
+
+  /* ===================================
+    ACCOUNT STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    PREVIEW STYLE STOPS HERE
+    ====================================== */
+  .preview_header {
+    margin-block: 0;
+  }
+  .preview_body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .preview_body_img {
+    flex-direction: column;
+    gap: 0;
+    grid-gap: 0;
+  }
+  .preview_body_img_aux {
+    display: none;
+  }
+  .preview_body_img_aux_slide {
+    display: none;
+  }
+  .preview_info_con {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  .preview_breadcrumbs {
+    display: none;
+  }
+  .preview_back {
+    display: block;
+  }
+  .preview_body_controls h3 {
+    font-size: 24px;
+  }
+  .preview_controls_colors_con {
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 10px;
+  }
+  /* ===================================
+    PREVIEW STYLE STOPS HERE
+    ====================================== */
+
+  .buzzz_model_container_full_page {
+    position: static;
+  }
+
+  .buzzz_canvas_container,
+  .buzzz_canvas_container > div {
+    min-height: 400px;
+    height: 100%;
+  }
+
+  .buzzz_create_board_con {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buzzz_canvas_board,
+  .buzzz_canvas_board .canvas_con {
+    width: 100%;
+    max-width: 256px;
+  }
+
+  .buzzz_create_controls_con.mobile {
+    position: static;
+    bottom: unset;
+    left: unset;
+    z-index: 99;
+  }
+
+  .buzzz_create_controls_con.mobile .buzzz_colors_con {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 667px) {
+  /* ===================================
+ START DESIGNING SECTION STYLE STARTS HERE
+====================================== */
+  .buzzz-prduct-page-container .app-container.marketplace .marketplace-images .market1 {
+    max-width: 10em;
+    top: 92px;
+    left: 82px;
+  }
+  .buzzz-prduct-page-container .app-container.marketplace .marketplace-images .market2 {
+    max-width: 10em;
+    top: 88px;
+    right: -81px;
+  }
+  .buzzz-prduct-page-container .app-container.marketplace .marketplace-images .market3 {
+    max-width: 10em;
+    bottom: -73px;
+    left: 79px;
+  }
+  .buzzz-prduct-page-container .app-container.marketplace .marketplace-images .market4 {
+    max-width: 10em;
+    bottom: -69px;
+    right: -80px;
+  }
+  .buzzz-start-designing-section .app-container {
+    padding: 0;
+  }
+  .buzzz-start-designing-section .design-images {
+    margin-bottom: 5em;
+  }
+  .buzzz-start-designing-section .design1 {
+    max-width: 13em;
+    left: 107px;
+    top: 268px;
+  }
+  .buzzz-start-designing-section .design2 {
+    position: absolute;
+    max-width: 13em;
+    top: 278px;
+  }
+  .buzzz-start-designing-section .design-con {
+    padding-top: 50px;
+    padding-bottom: 160px;
+  }
+  .buzzz-start-designing-section .design-con h3 {
+    max-width: 299px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  /* ===================================
+START DESIGNING SECTION STYLE STOPS HERE
+====================================== */
+  /* market - place */
+  .buzzz-prduct-page-container .navigation .curved-btn {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: var(--aeonik);
+    color: #000;
+    padding: 16px 20px;
+    border-radius: 60px;
+  }
+
+  .buzzz-prduct-page-container .grid-container,
+  .shipping-rate-con .grid-container {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-row-gap: 64px;
+    row-gap: 64px;
+    grid-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .buzzz-product-card-container .text-con h4 {
+    font-family: var(--aeonik);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    color: #000000;
+  }
+
+  .buzzz-product-card-container .text-con h6 {
+    font-size: 10px;
+  }
+  .product-card-content {
+    margin-top: 0 !important;
+  }
+  .buzzz-prduct-page-container .navigation {
+    background: #e8e8e8;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 3%);
+    border-radius: 60px;
+    grid-gap: 128px;
+    grid-gap: 60px;
+    gap: 39px;
+    padding: 17px 27px;
+    margin: 32px 0;
+  }
+
+  /* end of market place */
+
+  /* start product page */
+  .buzzz-prduct-page-container .hero-con .prduct-section {
+    display: block;
+    padding: 3rem 2rem;
+  }
+
+  .buzzz-prduct-page-container .hero-con .prduct-section .img-con {
+    max-width: 412px;
+    margin-top: 2rem;
+  }
+
+  .buzzz-prduct-page-container .hero-con .text-content h4 {
+    font-family: var(--aeonik-bold);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 27px !important;
+  }
+  /* end product page */
+
+  /* market - place */
+  .buzzz-prduct-page-container .navigation .curved-btn {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: var(--aeonik);
+    color: #000;
+    padding: 16px 20px;
+    border-radius: 60px;
+  }
+
+  .buzzz-prduct-page-container .grid-container,
+  .shipping-rate-con .grid-container {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-row-gap: 64px;
+    row-gap: 64px;
+    grid-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+  .buzzz-prduct-page-container .navigation {
+    background: #e8e8e8;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 3%);
+    border-radius: 60px;
+    grid-gap: 128px;
+    grid-gap: 60px;
+    gap: 39px;
+    padding: 17px 27px;
+    margin: 32px 0;
+  }
+
+  /* end of market place */
+
+  /* start product page */
+  .buzzz-prduct-page-container .hero-con .prduct-section {
+    display: block;
+    padding: 3rem 2rem;
+  }
+
+  .buzzz-prduct-page-container .hero-con .prduct-section .img-con {
+    max-width: 412px;
+    margin-top: 2rem;
+  }
+
+  .buzzz-prduct-page-container .hero-con .text-content h4 {
+    font-family: var(--aeonik-bold);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 27px !important;
+  }
+  /* end product page */
+
+  /* ab */
+  .about2_wrap {
+    display: block;
+    grid-gap: 150px;
+    gap: 150px;
+  }
+  .about4_card .app-container {
+    display: block;
+    grid-gap: 90px;
+    gap: 90px;
+  }
+  .about5_content {
+    display: block;
+    grid-gap: 150px;
+    grid-gap: 150px;
+    gap: 150px;
+    margin: 30px;
+  }
+  .about3_wrap {
+    display: block;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .about5_img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about2_img img {
+    max-width: 100%;
+    height: 250px;
+  }
+  .about1 h1 {
+    padding: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    color: rgba(255, 170, 15, 1);
+    text-align: center;
+  }
+  .about2_content h1 {
+    text-align: left !important;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .about2 p {
+    text-align: left !important;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding: 0px;
+    margin-bottom: 20px !important;
+  }
+  .about7_head h1,
+  .about7_head p {
+    text-align: left !important;
+  }
+  .about7_head,
+  .cart_quantity p {
+    text-align: center !important;
+  }
+  .buzzz-remove-modal-text {
+    text-align: center !important;
+  }
+  .about7_head h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 44px;
+  }
+  .about7_head p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about7_body {
+    grid-template-columns: 1fr !important;
+    margin: auto;
+  }
+
+  .about5 {
+    padding: 0;
+  }
+
+  .about4_content h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .about4_content p {
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 400;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  .about4_card:nth-child(2) {
+    background-color: #e6f4ff;
+    margin-top: 50px;
+  }
+  .about4_content h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  .about4_card {
+    padding: 77px 0;
+    margin-top: 50px;
+  }
+  .about5_content1 p {
+    font-size: 24px;
+    padding-bottom: 19px;
+    font-weight: 500;
+  }
+  .about5_content2 p {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .about6 {
+    padding: 64px 0;
+    display: none;
+  }
+  .about3_list h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .about3_list p {
+    font-size: 19px;
+    font-weight: 400;
+    padding-top: 0px;
+  }
+  .about3_list {
+    color: #fff;
+    margin-bottom: 18px;
+  }
+  .about1 h1 span::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+    content: '';
+    background-image: url(/svg/about_title.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 449px;
+    height: 160px;
+    transform: translateY(50%) translateX(20%);
+  }
+
+  .about5_img .about5_img_wrap:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+    content: '';
+    background-image: url(/images/resources_after.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1250px;
+    height: 500px;
+    transform: translateY(26px) translateX(26px);
+    z-index: -1;
+  }
+  .about5_img .about5_img_wrap:before {
+    position: absolute;
+    bottom: 50%;
+    right: 30%;
+    display: none;
+    content: '';
+    background-image: url(/images/about5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 132px;
+    height: 118px;
+    transform: translateY(50%) translateX(0%);
+  }
+  .about7 {
+    padding: 2px 0;
+  }
+  .about7_img {
+    height: 338px;
+    background-color: #eefffa;
+  }
+
+  .about7_body {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 64px;
+    grid-column-gap: 100px;
+    -moz-column-gap: 100px;
+    grid-column-gap: 100px;
+    padding-bottom: 60px;
+    column-gap: 100px;
+    grid-row-gap: 46px;
+    grid-row-gap: 46px;
+    row-gap: 46px;
+  }
+
+  .about7_content h2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about7_content h3 {
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 0px;
+    line-height: 22px;
+  }
+  /* ===================================
+   DASHBOARD STYLE STARTS HERE
+====================================== */
+  .stats_card_content h1 {
+    font-size: 9px;
+    padding-bottom: 6px;
+  }
+  .stats_card_content h3 {
+    font-size: 16px;
+  }
+  .stats_card_content h4 {
+    font-size: 8px;
+  }
+  .stats_card_img {
+    width: 34px;
+    height: 34px;
+  }
+  .stats_card_con {
+    padding: 15px 14px;
+  }
+  .dashboard_stats_cards {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+  /* ===================================
+   DASHBOARD STYLE STOPS HERE
+====================================== */
+  /* ===================================
+   PREVIEW STYLE STOPS HERE
+====================================== */
+  .preivew {
+    margin: 0 1rem 5rem 1rem;
+  }
+  /* ===================================
+   PREVIEW STYLE STOPS HERE
+====================================== */
+}
+/* col-sm */
+@media (max-width: 575.98px) {
+  /* market - place */
+  .buzzz-prduct-page-container .grid-container,
+  .shipping-rate-con .grid-container {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-row-gap: 64px;
+    row-gap: 64px;
+    grid-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+  .buzzz-prduct-page-container .navigation {
+    background: #e8e8e8;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 3%);
+    border-radius: 60px;
+    grid-gap: 102px;
+    grid-gap: 19px;
+    /* margin-top: -1rem !important; */
+    grid-gap: 19px;
+    gap: 19px;
+    padding: 7px 22px;
+    margin: 32px 0;
+  }
+  .buzzz-prduct-page-container .navigation button {
+    color: #333333;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+  .buzzz-prduct-page-container .navigation .curved-btn {
+    font-size: 18px;
+    line-height: 11px;
+    font-family: var(--aeonik);
+    color: #333333;
+    font-size: 10px;
+    padding: 7px 15px;
+    border-radius: 60px;
+  }
+  .buzzz-prduct-page-container .title-con h3 {
+    font-family: var(--aeonik-bold);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000;
+  }
+  .buzzz-prduct-page-container .title-con h5 {
+    font-family: var(--aeonik);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #000000;
+  }
+  /* end of market place */
+
+  /* start product page */
+  .buzzz-prduct-page-container .hero-con .prduct-section {
+    display: block;
+    padding: 2rem 0rem;
+  }
+
+  .buzzz-prduct-page-container .hero-con .prduct-section .img-con {
+    max-width: 412px;
+    margin-top: 2rem;
+  }
+
+  .buzzz-prduct-page-container .hero-con .text-content h4 {
+    font-family: var(--aeonik-bold);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 34px;
+    color: #000000;
+    margin-bottom: 27px !important;
+  }
+  /* end product page */
+
+  /* ===================================
+    DESIGN MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz_design_container .design_section1 h1 {
+    font-size: 32px !important;
+  }
+
+  .buzzz_design_container .design_section1 h3 {
+    font-size: 16px !important;
+  }
+
+  .buzzz_design_container .design_section1_btns {
+    text-align: left;
+  }
+
+  .buzzz_design_container .design_section1_btns .curved-btn.outline {
+    margin-left: 6px;
+    margin-top: 34px;
+  }
+
+  .buzzz_design_container .design_section1_img2 {
+    top: 490px;
+  }
+
+  .buzzz_design_container .design_section6_img {
+    max-width: 300px;
+  }
+
+  .buzzz_design_container .design_section6_card h2 {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .buzzz_design_container .design_section6_card p {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .buzzz_design_container .design_section7 h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .buzzz_design_container .accordion-button {
+    font-size: 15px !important;
+  }
+
+  .buzzz_design_container .accordion-body {
+    font-size: 13px !important;
+  }
+
+  /* ===================================
+    DESIGN MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    RESOURCES MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-resources-container .title-con {
+    padding-top: 0 !important;
+    padding-bottom: 50px;
+  }
+
+  .buzzz-resources-container .content-flex h3 {
+    font-size: 32px;
+  }
+
+  .buzzz-resources-container .content-flex p {
+    font-size: 18px !important;
+  }
+
+  .buzzz-resources-card-con h3 {
+    font-size: 24px;
+  }
+
+  .buzzz-resources-card-con p {
+    font-size: 18px;
+  }
+
+  .buzzz-subscribe-con {
+    padding: 60px 0 60px 0 !important;
+  }
+
+  .buzzz-subscribe-con .content h2 {
+    font-size: 38px;
+  }
+
+  .buzzz-subscribe-con .content p {
+    font-size: 18px;
+  }
+
+  .buzzz-subscribe-con .content .btn-con {
+    margin-top: 37px;
+  }
+
+  /* ===================================
+    RESOURCES MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    DASHBOARD STYLE STOPS HERE
+    ====================================== */
+  .customer-table-filter {
+    overflow-x: auto;
+    /* min-width: 410px; */
+  }
+  .customer-table-filter-person {
+    min-width: 140px;
+  }
+  .customer-table-filter-filter {
+    min-width: 140px;
+  }
+  .customer-table-filter-country {
+    min-width: 140px;
+  }
+  /* ===================================
+    DASHBOARD STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    CUSOMER STYLE STOPS HERE
+    ====================================== */
+  .buzzz-customer-page-container .content .title-con h4 {
+    font-size: 14px;
+  }
+  .buzzz-customer-page-container .content .title-con h3 {
+    font-size: 18px;
+  }
+  .buzzz-dashboard-header-container .header-con {
+    display: none !important;
+  }
+  .buzzz-customer-page-container {
+    margin-top: 32px;
+  }
+  .buzzz-customer-page-container .content {
+    padding-inline: 16px;
+  }
+  /* ===================================
+    CUSOMER STYLE STOPS HERE
+    ====================================== */
+  /* ===================================
+    NOTIFICATIONS STYLE STOPS HERE
+    ====================================== */
+  .buzzz-notifications-settings-container {
+    margin-top: 0;
+  }
+  .buzzz-dashboard-header-container {
+    margin-bottom: 0 !important;
+  }
+  .buzzz-notifications-settings-wrap {
+    margin-inline: 0 !important;
+    padding-inline: 8px;
+    padding-top: 16px;
+    background-color: #fff;
+  }
+  .notification-switch-con {
+    flex-direction: column;
+  }
+  /* ===================================
+    NOTIFICATIONS STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    ACCOUNT STYLE STOPS HERE
+    ====================================== */
+  .account-input-con {
+    flex-direction: column;
+  }
+  .account-input {
+    width: 100%;
+  }
+
+  /* ===================================
+    ACCOUNT STYLE STOPS HERE
+    ====================================== */
+}
+
+@media (max-width: 450px) {
+  /* ===================================
+   DASHBOARD STYLE STARTS HERE
+====================================== */
+  .dashboard_page {
+    padding-inline: 25px;
+  }
+  .dashboard_stats_cards {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+  .stats_card_con {
+    padding: 11px 14px;
+  }
+  .dashboard_chart {
+    padding: 34px 0px;
+  }
+  .dashboard_chard_head h1 {
+    font-size: 18px;
+  }
+  .dashboard_chard_head select {
+    font-size: 10px;
+    max-width: 100px;
+    padding-left: 0.4rem;
+    padding-right: 0.8rem;
+  }
+  /* ===================================
+     DASHBOARD STYLE STOPS HERE
+  ====================================== */
+}
+
+@media (max-width: 390px) {
+  .buzzz-prduct-page-container .navigation .curved-btn {
+    font-size: 18px;
+    line-height: 11px;
+    font-family: var(--aeonik);
+    color: #333333;
+    font-size: 10px;
+    padding: 7px 10px;
+    border-radius: 60px;
+  }
+
+  /* ===================================
+    AUTH STYLE STARTS HERE
+    ====================================== */
+  .buzzz-login-page .social-login-btn {
+    display: block !important;
+  }
+  .buzzz-login-page button {
+    width: 100%;
+    justify-content: left !important;
+    padding-left: 50px;
+    margin-bottom: 16px;
+    font-family: 'Aeonik' !important;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .buzzz-login-page button img {
+    padding-right: 15px;
+  }
+
+  /* ===================================
+    AUTH STYLE ENDS HERE
+    ====================================== */
+  /* =======================================
+      ABOUT STYLE STARTS HERE
+======================================== */
+  /* about */
+  .about5_img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about2_wrap {
+    display: block;
+    grid-gap: 150px;
+    gap: 150px;
+  }
+  .about2_img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about4_img {
+    max-width: 100%;
+    flex: 1 1;
+  }
+
+  .about5_img .about5_img_wrap:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';
+    background-image: url(/images/resources_after.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1250px;
+    display: none;
+    height: 500px;
+    transform: translateY(26px) translateX(26px);
+    z-index: -1;
+  }
+  .about4_card .app-container {
+    display: block;
+    grid-gap: 90px;
+    gap: 90px;
+  }
+  .about5_content {
+    display: block;
+    grid-gap: 150px;
+    gap: 150px;
+    margin: 0 120px;
+  }
+
+  .about5_img img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .about5_img .about5_img_wrap:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+    content: '';
+    background-image: url(/images/resources_after.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1250px;
+    height: 500px;
+    transform: translateY(26px) translateX(26px);
+    z-index: -1;
+  }
+  .about5_content {
+    display: BLOCK;
+    grid-gap: 150px;
+    grid-gap: 150px;
+    gap: 150px;
+    margin: 0 37px;
+  }
+
+  .about6_body2_img1 img {
+    width: 400px;
+    height: auto;
+    display: none;
+  }
+  .about6_body2_img2 img {
+    width: 560px;
+    height: auto;
+    display: none;
+  }
+  .about6_body {
+    display: block;
+    grid-gap: 20px;
+    gap: 20px;
+  }
+  .about7_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 64px;
+    grid-column-gap: 100px;
+    -moz-column-gap: 100px;
+    column-gap: 28px;
+    grid-row-gap: 36px;
+    row-gap: 34px;
+  }
+
+  .about7_img {
+    width: 315px;
+    height: 177px;
+    background-color: #eefffa;
+  }
+  .about7_head {
+    max-width: 100%;
+  }
+  .about6_body1_img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about4_content h1 {
+    font-size: 28px;
+    padding-top: 29px;
+    font-weight: 700;
+  }
+
+  .about7_content h2 {
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+
+  .about4_content p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  .about5_content1 p {
+    font-size: 26px;
+    padding-bottom: 19px;
+    font-weight: 500;
+  }
+  .about5_content2 p {
+    font-size: 19px;
+    font-weight: 400;
+  }
+  .about6_body1_content {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-top: 10px;
+  }
+  .about7_content h2 {
+    font-size: 18px;
+    padding: 8px 0;
+    font-weight: 400;
+  }
+  .about7_content h3 {
+    font-size: 12px;
+    font-weight: 400;
+    max-width: 265px;
+    line-height: 17px;
+  }
+  .about5_img .about5_img_wrap:before {
+    position: absolute;
+    bottom: 50%;
+    right: 30%;
+    content: '';
+    display: none;
+    background-image: url(/images/about5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 132px;
+    height: 118px;
+    transform: translateY(50%) translateX(0%);
+  }
+  /* about end */
+
+  /* ===================================
+    MOBILE HEADER STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-app-mobile-header-con .middle-links {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .buzzz-app-mobile-header-con .middle-links a {
+    display: block !important;
+  }
+
+  .buzzz-mobile-hamburger-menu .curved-btn {
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #212934 !important;
+  }
+
+  .login-link {
+    background-color: #f5f8fa;
+
+    height: 72px;
+  }
+
+  .login-link a:first-child {
+    color: #ffffff !important;
+  }
+
+  .login-link .curved-btn {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 35px;
+    padding: 12px 24px;
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  /* ===================================
+    MOBILE HEADER STYLE ENDS HERE
+    ====================================== */
+
+  /* ===================================
+    FOOTER STYLE STARTS HERE
+    ====================================== */
+
+  .footer-top ul {
+    padding: 0 !important;
+    margin-top: 32.76px;
+  }
+
+  .footer-top ul h1 {
+    text-transform: uppercase;
+  }
+
+  .icon-con2 {
+    display: none;
+  }
+
+  /* ===================================
+    FOOTER STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    CONTACT US MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-contact-us-container .title-con {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+
+  .buzzz-contact-us-container h2 {
+    font-size: 64px !important;
+  }
+
+  .buzzz-contact-us-container .contact-us-grid-con {
+    padding: 65px 0;
+    grid-template-columns: 1fr;
+  }
+
+  .buzzz-subscribe-con {
+    padding: 60px 0 80px 0;
+    margin-bottom: 56px;
+    margin-top: 10px;
+  }
+
+  .buzzz-subscribe-con .content h2 {
+    font-size: 30px;
+  }
+
+  .buzzz-subscribe-con .content p {
+    font-size: 15px;
+  }
+
+  /* ===================================
+    CONTACT US MOBILE STYLE STOPS HERE
+    ====================================== */
+
+  /* ===================================
+    CONTACT MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  .buzzz-contact-us-form-page {
+    padding: 0;
+  }
+
+  .buzzz-contact-us-form-page .title-con h3 {
+    font-size: 32px;
+  }
+
+  .buzzz-contact-us-form-page .title-con p {
+    font-size: 16px;
+  }
+
+  .buzzz-contact-us-form-page .form-info p {
+    font-size: 16px;
+  }
+
+  .buzzz-contact-us-form-page .contact-us-grid-con {
+    grid-template-columns: 1fr;
+  }
+
+  /* ===================================
+    CONTACT MOBILE STYLE STARTS HERE
+    ====================================== */
+
+  /* ===================================
+    LANDING MOBILE STYLE STARTS HERE
+    ====================================== */
+  .landing_hero_prods {
+    padding-bottom: 20px;
+    grid-gap: 0;
+    gap: 0;
+    overflow-x: hidden;
+  }
+  .landing_hero_prod {
+    flex: 1;
+  }
+  .new_hero_landing_btns a {
+    font-size: 10px;
+    padding: 4px 16px;
+  }
+  .landing_section1 p {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .landing_section2 {
+    margin-inline: 10px;
+  }
+  /* ===================================
+    LANDING MOBILE STYLE STARTS HERE
+    ====================================== */
+}
+
+@media (max-width: 360px) {
+  .design_section2_card {
+    margin-left: -8px;
+  }
+  .buzzz-prduct-page-container .navigation .curved-btn {
+    font-size: 6px !important;
+    line-height: 7px;
+    font-family: var(--aeonik);
+    color: #333333;
+    font-size: 10px;
+    padding: 7px 10px;
+    border-radius: 60px;
+  }
+  /* about */
+  .about1 h1 {
+    padding: 13px;
+    font-size: 34px;
+    font-weight: 700;
+    color: rgba(255, 170, 15, 1);
+    text-align: center;
+  }
+  .about2_content h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .about2 p {
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px !important;
+  }
+  .about2_img img {
+    max-width: 100%;
+    height: auto;
+  }
+  .about3 {
+    background-color: #7047eb;
+    padding: 56px 0;
+  }
+  .about3_list h1 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .about3_list p {
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 0px;
+  }
+  .about4_content p {
+    font-size: 13px;
+    line-height: 29px;
+    font-weight: 400;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+  .about4_content h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  .about5_content1 p {
+    font-size: 17px;
+    padding-bottom: 19px;
+    font-weight: 500;
+  }
+  .about5_content2 h1 {
+    font-size: 29px;
+    font-weight: 700;
+    padding-bottom: 16px;
+  }
+  .about5_content2 p {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  .about7_head p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-top: 16px;
+  }
+  .about7_img {
+    width: 260px;
+    height: 186px;
+    background-color: #eefffa;
+  }
+  .about7_content h2 {
+    font-size: 19px;
+    padding: 8px 0;
+    font-weight: 600;
+  }
+}
+@media (max-width: 299.98px) {
+  .buzzz-prduct-page-container .navigation .curved-btn {
+    font-size: 6px !important;
+    line-height: 7px;
+    font-family: var(--aeonik);
+    color: #333333;
+    font-size: 10px;
+    padding: 7px 10px;
+    border-radius: 60px;
+  }
+}
